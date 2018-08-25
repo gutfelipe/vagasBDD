@@ -17,12 +17,13 @@ import cucumber.api.java.pt.Quando;
 public class validarCurriculoSteps {
 	
 	private WebDriver driver;
-//	private WebDriverWait wait = new WebDriverWait(driver, 1);
+	private WebDriverWait wait;
 
 	
 	@Before
 	public void acessoInicial() {
 		acessarPagina();
+		wait = new WebDriverWait(driver, 1);
 	}
 
 	@Dado("^que acesso minha conta com \"([^\"]*)\" e (\\d+)$")
@@ -30,18 +31,45 @@ public class validarCurriculoSteps {
 		fazerLogin(login, senha);
 	}
 	
-	@Dado("^acesso a area a funcionalidade de atualizar curriculo$")
+	@Dado("^acesso a area da funcionalidade de atualizar curriculo$")
 	public void acessoAAreaAFuncionalidadeDeAtualizarCurriculo() throws Throwable {
-//		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("msgLogado")))); 
-		driver.findElement(By.id("menuTopo")).click();
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("msgLogado")))); 
+		driver.findElement(By.xpath("//nav[@id='menuTopo']/a/span")).click();
+	    driver.findElement(By.xpath("//a[contains(text(),'Atualizar currículo')]")).click();
 	}
-
-
-	@Quando("^adiciono a conta$")
-	public void adicionoAConta() throws Throwable {
+	
+	@Dado("^que edito dados pessoais (\\d+)/(\\d+)/(\\d+) \"([^\"]*)\" \"([^\"]*)\" (\\d+)$")
+	public void queEditoDadosPessoais(int arg1, int arg2, int arg3, String arg4, String arg5, int arg6) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new PendingException();
 	}
+
+	@Então("^alteracao eh realizada com sucesso$")
+	public void alteracaoEhRealizadaComSucesso() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Dado("^que edito documentos pessoais País de Nacionalidade \"([^\"]*)\" e Documento \"([^\"]*)\"$")
+	public void queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String arg1, String arg2) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Dado("^que alterei o CPF de forma correta \"([^\"]*)\"$")
+	public void queAltereiOCPFDeFormaCorreta(String arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+
+
+	
+	
+	
+	
+	
+	
 	
 	
 	public void acessarPagina() {
@@ -58,8 +86,7 @@ public class validarCurriculoSteps {
 		driver.findElement(By.id("btLogin")).click();
 		
 		driver.findElement(By.id("login_candidatos_form_usuario")).sendKeys(login);
-		driver.findElement(By.id("login_candidatos_form_senha")).sendKeys(senha);
-		
+		driver.findElement(By.id("login_candidatos_form_senha")).sendKeys(senha);		
 	    driver.findElement(By.name("commit")).click();
 	}
 	

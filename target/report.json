@@ -17,8 +17,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7952704971,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -39,11 +38,10 @@
           },
           {
             "result": {
-              "duration": 2646239917,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
-            "name": "acesso a area a funcionalidade de atualizar curriculo",
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
             "match": {
               "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
             },
@@ -52,42 +50,351 @@
         ]
       },
       {
-        "before": [
+        "line": 19,
+        "name": "dados pessoais validacao de campos",
+        "description": "",
+        "id": "validar-currico;dados-pessoais-validacao-de-campos;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
           {
             "result": {
-              "duration": 14618602128,
-              "status": "passed"
+              "status": "skipped"
             },
+            "line": 14,
+            "name": "que edito dados pessoais 02/03/1980 \"feminino\" \"casado\" 2",
             "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
+              "arguments": [
+                {
+                  "val": "02",
+                  "offset": 25
+                },
+                {
+                  "val": "03",
+                  "offset": 28
+                },
+                {
+                  "val": "1980",
+                  "offset": 31
+                },
+                {
+                  "val": "feminino",
+                  "offset": 37
+                },
+                {
+                  "val": "casado",
+                  "offset": 48
+                },
+                {
+                  "val": "2",
+                  "offset": 56
+                }
+              ],
+              "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
           }
         ],
-        "line": 12,
+        "tags": [
+          {
+            "line": 2,
+            "name": "@funcionalidade"
+          }
+        ]
+      },
+      {
+        "line": 8,
         "name": "",
         "description": "",
-        "id": "validar-currico;",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "dados pessoais validacao de campos",
+        "description": "",
+        "id": "validar-currico;dados-pessoais-validacao-de-campos;;3",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "que edito dados pessoais 03/12/1995 \"masculino\" \"solteiro\" 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "03",
+                  "offset": 25
+                },
+                {
+                  "val": "12",
+                  "offset": 28
+                },
+                {
+                  "val": "1995",
+                  "offset": 31
+                },
+                {
+                  "val": "masculino",
+                  "offset": 37
+                },
+                {
+                  "val": "solteiro",
+                  "offset": 49
+                },
+                {
+                  "val": "0",
+                  "offset": 59
+                }
+              ],
+              "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@funcionalidade"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "validacao de documentos pessoais",
+        "description": "",
+        "id": "validar-currico;validacao-de-documentos-pessoais",
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 1858831,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.adicionoAConta(validarCurriculoSteps.java:43)\r\n\tat ✽.Quando adiciono a conta(validarCurriculo.feature:13)\r\n",
-              "status": "pending"
+              "status": "skipped"
             },
-            "line": 13,
-            "name": "adiciono a conta",
+            "line": 23,
+            "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Brasil\"",
             "match": {
-              "location": "validarCurriculoSteps.adicionoAConta()"
+              "arguments": [
+                {
+                  "val": "Brasil",
+                  "offset": 53
+                },
+                {
+                  "val": "Brasil",
+                  "offset": 74
+                }
+              ],
+              "location": "validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String,String)"
             },
-            "keyword": "Quando "
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 26,
+        "name": "validacao de CPF",
+        "description": "",
+        "id": "validar-currico;validacao-de-cpf",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "que alterei o CPF de forma correta \"123.123.123-23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123.123.123-23",
+                  "offset": 36
+                }
+              ],
+              "location": "validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
           }
         ]
       }
     ],
     "name": "Validar Currico",
-    "description": "\r\nComo usuário desejo validar todas as informações mais relevantes do meu curriculo\r\nvia Selenium WebDriver com BDD",
+    "description": "\r\nComo usuário desejo validar todas as informacoes mais relevantes do meu curriculo\r\nvia Selenium WebDriver com BDD",
     "id": "validar-currico",
     "keyword": "Funcionalidade",
     "uri": "validarCurriculo.feature",
