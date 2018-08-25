@@ -1,0 +1,101 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 7952704971,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2646239917,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "acesso a area a funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14618602128,
+              "status": "passed"
+            },
+            "match": {
+              "location": "validarCurriculoSteps.acessoInicial()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "validar-currico;",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 1858831,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.adicionoAConta(validarCurriculoSteps.java:43)\r\n\tat ✽.Quando adiciono a conta(validarCurriculo.feature:13)\r\n",
+              "status": "pending"
+            },
+            "line": 13,
+            "name": "adiciono a conta",
+            "match": {
+              "location": "validarCurriculoSteps.adicionoAConta()"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      }
+    ],
+    "name": "Validar Currico",
+    "description": "\r\nComo usuário desejo validar todas as informações mais relevantes do meu curriculo\r\nvia Selenium WebDriver com BDD",
+    "id": "validar-currico",
+    "keyword": "Funcionalidade",
+    "uri": "validarCurriculo.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@funcionalidade"
+      }
+    ]
+  }
+]
