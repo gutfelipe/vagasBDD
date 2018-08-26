@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
@@ -25,6 +26,11 @@ public class validarCurriculoSteps {
 		acessarPagina();
 		wait = new WebDriverWait(driver, 1);
 	}
+	
+	@After
+	public void fecharPagina() {
+		driver.close();
+	}
 
 	@Dado("^que acesso minha conta com \"([^\"]*)\" e (\\d+)$")
 	public void queAcessoMinhaContaComE(String login, String senha) throws Throwable {
@@ -39,8 +45,10 @@ public class validarCurriculoSteps {
 	}
 	
 	@Dado("^que edito dados pessoais (\\d+)/(\\d+)/(\\d+) \"([^\"]*)\" \"([^\"]*)\" (\\d+)$")
-	public void queEditoDadosPessoais(int arg1, int arg2, int arg3, String arg4, String arg5, int arg6) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+	public void queEditoDadosPessoais(int dia, int mes, int ano, String genero, String estadoCivil, int filhos) throws Throwable {
+
+		
+		// Write code here that turns the phrase above into concrete actions
 	    throw new PendingException();
 	}
 
