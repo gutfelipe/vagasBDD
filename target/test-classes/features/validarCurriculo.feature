@@ -17,10 +17,10 @@ Funcionalidade: Validar Currico
 		Exemplos:
 			|dataNascimento	|genero	 		|estadoCivil		|filhos	|
 			| 02/03/1980		|"feminino"	|"casado" 			|2			|
-			| 03/12/1995		|"masculino"|"solteiro"			|0			|
-			| 03/12/1995		|"masculino"|"viuvo"				|0			|
-			| 03/12/1995		|"masculino"|"separado"			|0			|
- 			| 03/12/1995		|"masculino"|"divorciado"		|0			|
+			| 03/12/1995		|"masculino"|"solteiro"			|1			|
+			| 03/12/1991		|"feminino" |"viuvo"				|3			|
+			| 03/12/1992		|"masculino"|"separado"			|0			|
+ 			| 03/12/1993		|"feminino" |"divorciado"		|0			|
 		
 		Cenário: validacao de documentos pessoais
 			Dado que edito documentos pessoais País de Nacionalidade "Brasil" e Documento "Brasil"

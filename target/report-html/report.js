@@ -67,24 +67,24 @@ formatter.examples({
         "03/12/1995",
         "\"masculino\"",
         "\"solteiro\"",
-        "0"
+        "1"
       ],
       "line": 20,
       "id": "validar-currico;dados-pessoais-validacao-de-campos;;3"
     },
     {
       "cells": [
-        "03/12/1995",
-        "\"masculino\"",
+        "03/12/1991",
+        "\"feminino\"",
         "\"viuvo\"",
-        "0"
+        "3"
       ],
       "line": 21,
       "id": "validar-currico;dados-pessoais-validacao-de-campos;;4"
     },
     {
       "cells": [
-        "03/12/1995",
+        "03/12/1992",
         "\"masculino\"",
         "\"separado\"",
         "0"
@@ -94,8 +94,8 @@ formatter.examples({
     },
     {
       "cells": [
-        "03/12/1995",
-        "\"masculino\"",
+        "03/12/1993",
+        "\"feminino\"",
         "\"divorciado\"",
         "0"
       ],
@@ -106,7 +106,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 8953387259,
+  "duration": 13914922337,
   "status": "passed"
 });
 formatter.background({
@@ -140,14 +140,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 5098426281,
+  "duration": 8340626308,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2946460537,
+  "duration": 3945074438,
   "status": "passed"
 });
 formatter.scenario({
@@ -210,23 +210,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 13230678525,
+  "duration": 10690999491,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 1447268,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.alteracaoEhRealizadaComSucesso(validarCurriculoSteps.java:71)\r\n\tat ✽.Então alteracao eh realizada com sucesso(validarCurriculo.feature:15)\r\n",
-  "status": "pending"
+  "duration": 259885540,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 2320726284,
+  "duration": 2323731829,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7569740893,
+  "duration": 7929006106,
   "status": "passed"
 });
 formatter.background({
@@ -260,14 +259,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 5186068473,
+  "duration": 5493588487,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 6129116812,
+  "duration": 4193395053,
   "status": "passed"
 });
 formatter.scenario({
@@ -286,7 +285,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 14,
-  "name": "que edito dados pessoais 03/12/1995 \"masculino\" \"solteiro\" 0",
+  "name": "que edito dados pessoais 03/12/1995 \"masculino\" \"solteiro\" 1",
   "matchedColumns": [
     0,
     1,
@@ -323,31 +322,30 @@ formatter.match({
       "offset": 49
     },
     {
-      "val": "0",
+      "val": "1",
       "offset": 59
     }
   ],
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 247815411,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"class name\",\"selector\":\"modal-footer\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027ZAPL10657\u0027, ip: \u0027192.168.1.36\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\GOLIVE~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53804}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: 2eb0bc16e5860601d7c403650aa4bda7\n*** Element info: {Using\u003dclass name, value\u003dmodal-footer}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:405)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:391)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat steps.validarCurriculoSteps.queEditoDadosPessoais(validarCurriculoSteps.java:51)\r\n\tat ✽.Dado que edito dados pessoais 03/12/1995 \"masculino\" \"solteiro\" 0(validarCurriculo.feature:14)\r\n",
-  "status": "failed"
+  "duration": 2369351531,
+  "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 276883100,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 252476648,
+  "duration": 2150880952,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3580533288,
-  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027ZAPL10657\u0027, ip: \u0027192.168.1.36\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\GOLIVE~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53991}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: 7de9d91e08b6704ef0b36483b2c4c614\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:283)\r\n\tat steps.validarCurriculoSteps.acessarPagina(validarCurriculoSteps.java:101)\r\n\tat steps.validarCurriculoSteps.acessoInicial(validarCurriculoSteps.java:27)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
-  "status": "failed"
+  "duration": 7528874556,
+  "status": "passed"
 });
 formatter.background({
   "line": 8,
@@ -380,13 +378,15 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5559041005,
+  "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4016632439,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 21,
@@ -404,7 +404,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 14,
-  "name": "que edito dados pessoais 03/12/1995 \"masculino\" \"viuvo\" 0",
+  "name": "que edito dados pessoais 03/12/1991 \"feminino\" \"viuvo\" 3",
   "matchedColumns": [
     0,
     1,
@@ -429,7 +429,126 @@ formatter.match({
       "offset": 28
     },
     {
-      "val": "1995",
+      "val": "1991",
+      "offset": 31
+    },
+    {
+      "val": "feminino",
+      "offset": 37
+    },
+    {
+      "val": "viuvo",
+      "offset": 48
+    },
+    {
+      "val": "3",
+      "offset": 55
+    }
+  ],
+  "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
+});
+formatter.result({
+  "duration": 3584281156,
+  "status": "passed"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "duration": 250130737,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2315201143,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 7581329228,
+  "status": "passed"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "duration": 4453956840,
+  "status": "passed"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "duration": 6186922938,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 22,
+  "name": "dados pessoais validacao de campos",
+  "description": "",
+  "id": "validar-currico;dados-pessoais-validacao-de-campos;;5",
+  "type": "scenario",
+  "keyword": "Esquema do Cenário",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionalidade"
+    }
+  ]
+});
+formatter.step({
+  "line": 14,
+  "name": "que edito dados pessoais 03/12/1992 \"masculino\" \"separado\" 0",
+  "matchedColumns": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 15,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "03",
+      "offset": 25
+    },
+    {
+      "val": "12",
+      "offset": 28
+    },
+    {
+      "val": "1992",
       "offset": 31
     },
     {
@@ -437,18 +556,230 @@ formatter.match({
       "offset": 37
     },
     {
-      "val": "viuvo",
+      "val": "separado",
       "offset": 49
     },
     {
       "val": "0",
-      "offset": 56
+      "offset": 59
     }
   ],
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2309222149,
+  "status": "passed"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "duration": 258334438,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2077327059,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 7418152353,
+  "status": "passed"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "duration": 6568213956,
+  "status": "passed"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "duration": 6359682062,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 23,
+  "name": "dados pessoais validacao de campos",
+  "description": "",
+  "id": "validar-currico;dados-pessoais-validacao-de-campos;;6",
+  "type": "scenario",
+  "keyword": "Esquema do Cenário",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionalidade"
+    }
+  ]
+});
+formatter.step({
+  "line": 14,
+  "name": "que edito dados pessoais 03/12/1993 \"feminino\" \"divorciado\" 0",
+  "matchedColumns": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 15,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "03",
+      "offset": 25
+    },
+    {
+      "val": "12",
+      "offset": 28
+    },
+    {
+      "val": "1993",
+      "offset": 31
+    },
+    {
+      "val": "feminino",
+      "offset": 37
+    },
+    {
+      "val": "divorciado",
+      "offset": 48
+    },
+    {
+      "val": "0",
+      "offset": 60
+    }
+  ],
+  "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
+});
+formatter.result({
+  "duration": 4208913250,
+  "status": "passed"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "duration": 268848556,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2448698648,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 8802267298,
+  "status": "passed"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "duration": 4480099032,
+  "status": "passed"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "duration": 5382693730,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 25,
+  "name": "validacao de documentos pessoais",
+  "description": "",
+  "id": "validar-currico;validacao-de-documentos-pessoais",
+  "type": "scenario",
+  "keyword": "Cenário"
+});
+formatter.step({
+  "line": 26,
+  "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Brasil\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 27,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Brasil",
+      "offset": 53
+    },
+    {
+      "val": "Brasil",
+      "offset": 74
+    }
+  ],
+  "location": "validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String,String)"
+});
+formatter.result({
+  "duration": 2003821,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(validarCurriculoSteps.java:70)\r\n\tat ✽.Dado que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Brasil\"(validarCurriculo.feature:26)\r\n",
+  "status": "pending"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
@@ -457,7 +788,94 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 2152301412,
-  "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027ZAPL10657\u0027, ip: \u0027192.168.1.36\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\GOLIVE~1\\AppData\\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53991}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}\nSession ID: 7de9d91e08b6704ef0b36483b2c4c614\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:435)\r\n\tat steps.validarCurriculoSteps.fecharPagina(validarCurriculoSteps.java:33)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:100)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)\r\n",
-  "status": "failed"
+  "duration": 2118071059,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 7405303653,
+  "status": "passed"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "duration": 4464242899,
+  "status": "passed"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "duration": 11284953137,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 29,
+  "name": "validacao de CPF",
+  "description": "",
+  "id": "validar-currico;validacao-de-cpf",
+  "type": "scenario",
+  "keyword": "Cenário"
+});
+formatter.step({
+  "line": 30,
+  "name": "que alterei o CPF de forma correta \"123.123.123-23\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 31,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "123.123.123-23",
+      "offset": 36
+    }
+  ],
+  "location": "validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(String)"
+});
+formatter.result({
+  "duration": 293003,
+  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(validarCurriculoSteps.java:76)\r\n\tat ✽.Dado que alterei o CPF de forma correta \"123.123.123-23\"(validarCurriculo.feature:30)\r\n",
+  "status": "pending"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 253923538,
+  "status": "passed"
+});
 });

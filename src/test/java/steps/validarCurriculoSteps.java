@@ -1,5 +1,7 @@
 package steps;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +27,7 @@ public class validarCurriculoSteps {
 	@Before
 	public void acessoInicial() {
 		acessarPagina();
-		wait = new WebDriverWait(driver, 1);
+		wait = new WebDriverWait(driver, 5);
 	}
 	
 	@After
@@ -47,28 +49,19 @@ public class validarCurriculoSteps {
 	
 	@Dado("^que edito dados pessoais (\\d+)/(\\d+)/(\\d+) \"([^\"]*)\" \"([^\"]*)\" (\\d+)$")
 	public void queEditoDadosPessoais(int dia, int mes, int ano, String genero, String estadoCivil, int filhos) throws Throwable {
-	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/dados_pessoais/edit')]")).click();
-	    wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("modal-footer"))));
+	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/dados_pessoais/edit')]")).click();	    
+	    esperaAbrirParaEdicao();
 
 	    alteraDataNascimento(dia, mes, ano);
+	    alteraEstadoCivil(estadoCivil);
 		alterarGenero(genero);
-		alteraEstadoCivil(estadoCivil);
 		alteraFilhos(filhos);
-		
-		Thread.sleep(10000);
-
-		//TODO
 	}
-
-	
-
-
-
 
 	@Então("^alteracao eh realizada com sucesso$")
 	public void alteracaoEhRealizadaComSucesso() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		salvarEdicao();
+		verificaMensagemComSucesso();	
 	}
 
 	@Dado("^que edito documentos pessoais País de Nacionalidade \"([^\"]*)\" e Documento \"([^\"]*)\"$")
@@ -85,11 +78,6 @@ public class validarCurriculoSteps {
 
 
 
-	
-	
-	
-	
-	
 	
 	
 	
@@ -112,16 +100,18 @@ public class validarCurriculoSteps {
 	}
 	
 	private void alteraDataNascimento(int dia, int mes, int ano) {
+		String data = String.format("%02d/%02d/%d", dia, mes, ano);
+		               		
 	    driver.findElement(By.id("dados_pessoais_data_de_nascimento")).clear();
 	    driver.findElement(By.id("dados_pessoais_data_de_nascimento"))
-	    	.sendKeys(String.format("{0}{1}{2}", dia, mes, ano));		
+	    	.sendKeys(data);		
 	}
 
 	private void alterarGenero(String genero) {
-		if (genero == "masculino") {
+		if (genero.equals("masculino")) {
 		    driver.findElement(By.id("dados_pessoais_genero_masculino")).click();
 		}
-		if (genero == "feminino") {
+		if (genero.equals("feminino")) {
 		    driver.findElement(By.id("dados_pessoais_genero_feminino")).click();			
 		}
 	}
@@ -130,28 +120,24 @@ public class validarCurriculoSteps {
 	    driver.findElement(By.id("dados_pessoais_estado_civil")).click();
 	    String text = "";
 	    	
-	    if (estadoCivil == "separado") {
+	    if (estadoCivil.equals("separado")) {
 			text = "Separado(a)";
 	    }
-	    if (estadoCivil == "casado") {
-			text = "Casado(a)";
-	    }
-	    if (estadoCivil == "solteiro") {
+	    else if (estadoCivil.equals("casado")) {
+	    		text = "Casado(a)";
+		}  
+	    else if (estadoCivil.equals("solteiro")) {
 	    	text = "Solteiro(a)";
 	    }
-	    if (estadoCivil == "divorciado") {
+	    else if (estadoCivil.equals("divorciado")) {
 	    	text = "Divorciado(a)";
 	    }
-	    if (estadoCivil == "viuvo") {
+	    else if (estadoCivil.equals("viuvo")) {
 	    	text = "Viúvo(a)";
 	    } 
-	    else {
-			text = "Casado(a)";
-		}
 
 	    new Select(driver.findElement(By.id("dados_pessoais_estado_civil")))
     	.selectByVisibleText(text);
-	    
 	}
 
 	private void alteraFilhos(int filhos) {
@@ -159,13 +145,24 @@ public class validarCurriculoSteps {
 		    driver.findElement(By.id("filhos_sim")).click();
 		    driver.findElement(By.id("dados_pessoais_filhos")).click();
 		    driver.findElement(By.id("dados_pessoais_filhos")).clear();
-		    driver.findElement(By.id("dados_pessoais_filhos")).sendKeys(String.format("{0}", filhos));
+		    driver.findElement(By.id("dados_pessoais_filhos")).sendKeys(String.format("%d", filhos));
 		}
 		else {
 		    driver.findElement(By.id("filhos_nao")).click();
-		}
-		
+		}	
 	}
 	
+	private void esperaAbrirParaEdicao() {
+	   // wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("marcadorEdicao"))));
+	    wait.until(ExpectedConditions.elementToBeClickable(By.className("btn-success")));		
+	}
+	
+	private void salvarEdicao() {
+		driver.findElement(By.className("btn-success")).click();
+	}	
+
+	private void verificaMensagemComSucesso() {
+		assertTrue(driver.findElement(By.className("ico-ok")).isEnabled());
+	}
 	
 }
