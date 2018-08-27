@@ -17,7 +17,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8340626308,
+              "duration": 4790325546,
               "status": "passed"
             },
             "line": 9,
@@ -39,7 +39,7 @@
           },
           {
             "result": {
-              "duration": 3945074438,
+              "duration": 4914441677,
               "status": "passed"
             },
             "line": 10,
@@ -55,7 +55,7 @@
         "before": [
           {
             "result": {
-              "duration": 13914922337,
+              "duration": 9892594845,
               "status": "passed"
             },
             "match": {
@@ -66,11 +66,11 @@
         "line": 19,
         "name": "dados pessoais validacao de campos",
         "description": "",
-        "id": "validar-currico;dados-pessoais-validacao-de-campos;;2",
+        "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;2",
         "after": [
           {
             "result": {
-              "duration": 2323731829,
+              "duration": 2312690985,
               "status": "passed"
             },
             "match": {
@@ -83,7 +83,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10690999491,
+              "duration": 3661034292,
               "status": "passed"
             },
             "line": 14,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 259885540,
+              "duration": 245082480,
               "status": "passed"
             },
             "line": 15,
@@ -154,7 +154,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5493588487,
+              "duration": 4639400795,
               "status": "passed"
             },
             "line": 9,
@@ -176,7 +176,7 @@
           },
           {
             "result": {
-              "duration": 4193395053,
+              "duration": 4936031376,
               "status": "passed"
             },
             "line": 10,
@@ -192,7 +192,7 @@
         "before": [
           {
             "result": {
-              "duration": 7929006106,
+              "duration": 7365050129,
               "status": "passed"
             },
             "match": {
@@ -203,11 +203,11 @@
         "line": 20,
         "name": "dados pessoais validacao de campos",
         "description": "",
-        "id": "validar-currico;dados-pessoais-validacao-de-campos;;3",
+        "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;3",
         "after": [
           {
             "result": {
-              "duration": 2150880952,
+              "duration": 2321427075,
               "status": "passed"
             },
             "match": {
@@ -220,7 +220,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2369351531,
+              "duration": 1993579236,
               "status": "passed"
             },
             "line": 14,
@@ -264,7 +264,7 @@
           },
           {
             "result": {
-              "duration": 276883100,
+              "duration": 231521663,
               "status": "passed"
             },
             "line": 15,
@@ -291,7 +291,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5559041005,
+              "duration": 4499759670,
               "status": "passed"
             },
             "line": 9,
@@ -313,7 +313,7 @@
           },
           {
             "result": {
-              "duration": 4016632439,
+              "duration": 5767242515,
               "status": "passed"
             },
             "line": 10,
@@ -329,7 +329,7 @@
         "before": [
           {
             "result": {
-              "duration": 7528874556,
+              "duration": 7186588024,
               "status": "passed"
             },
             "match": {
@@ -340,11 +340,11 @@
         "line": 21,
         "name": "dados pessoais validacao de campos",
         "description": "",
-        "id": "validar-currico;dados-pessoais-validacao-de-campos;;4",
+        "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;4",
         "after": [
           {
             "result": {
-              "duration": 2315201143,
+              "duration": 2071133222,
               "status": "passed"
             },
             "match": {
@@ -357,7 +357,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3584281156,
+              "duration": 4486262285,
               "status": "passed"
             },
             "line": 14,
@@ -401,7 +401,7 @@
           },
           {
             "result": {
-              "duration": 250130737,
+              "duration": 217070131,
               "status": "passed"
             },
             "line": 15,
@@ -428,7 +428,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4453956840,
+              "duration": 4267718833,
               "status": "passed"
             },
             "line": 9,
@@ -450,7 +450,7 @@
           },
           {
             "result": {
-              "duration": 6186922938,
+              "duration": 2968503711,
               "status": "passed"
             },
             "line": 10,
@@ -466,7 +466,7 @@
         "before": [
           {
             "result": {
-              "duration": 7581329228,
+              "duration": 7267535707,
               "status": "passed"
             },
             "match": {
@@ -477,11 +477,11 @@
         "line": 22,
         "name": "dados pessoais validacao de campos",
         "description": "",
-        "id": "validar-currico;dados-pessoais-validacao-de-campos;;5",
+        "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;5",
         "after": [
           {
             "result": {
-              "duration": 2077327059,
+              "duration": 2319677364,
               "status": "passed"
             },
             "match": {
@@ -494,7 +494,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2309222149,
+              "duration": 2671688115,
               "status": "passed"
             },
             "line": 14,
@@ -538,7 +538,7 @@
           },
           {
             "result": {
-              "duration": 258334438,
+              "duration": 214237897,
               "status": "passed"
             },
             "line": 15,
@@ -565,7 +565,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6568213956,
+              "duration": 4938120531,
               "status": "passed"
             },
             "line": 9,
@@ -587,7 +587,7 @@
           },
           {
             "result": {
-              "duration": 6359682062,
+              "duration": 7455998420,
               "status": "passed"
             },
             "line": 10,
@@ -603,7 +603,7 @@
         "before": [
           {
             "result": {
-              "duration": 7418152353,
+              "duration": 7764657219,
               "status": "passed"
             },
             "match": {
@@ -614,11 +614,11 @@
         "line": 23,
         "name": "dados pessoais validacao de campos",
         "description": "",
-        "id": "validar-currico;dados-pessoais-validacao-de-campos;;6",
+        "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;6",
         "after": [
           {
             "result": {
-              "duration": 2448698648,
+              "duration": 2310011671,
               "status": "passed"
             },
             "match": {
@@ -631,7 +631,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4208913250,
+              "duration": 1663574656,
               "status": "passed"
             },
             "line": 14,
@@ -675,7 +675,7 @@
           },
           {
             "result": {
-              "duration": 268848556,
+              "duration": 223742363,
               "status": "passed"
             },
             "line": 15,
@@ -702,7 +702,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4480099032,
+              "duration": 4382491347,
               "status": "passed"
             },
             "line": 9,
@@ -724,7 +724,7 @@
           },
           {
             "result": {
-              "duration": 5382693730,
+              "duration": 5042062135,
               "status": "passed"
             },
             "line": 10,
@@ -740,7 +740,7 @@
         "before": [
           {
             "result": {
-              "duration": 8802267298,
+              "duration": 7680556358,
               "status": "passed"
             },
             "match": {
@@ -751,11 +751,11 @@
         "line": 25,
         "name": "validacao de documentos pessoais",
         "description": "",
-        "id": "validar-currico;validacao-de-documentos-pessoais",
+        "id": "validar-curriculo;validacao-de-documentos-pessoais",
         "after": [
           {
             "result": {
-              "duration": 2118071059,
+              "duration": 2326109078,
               "status": "passed"
             },
             "match": {
@@ -768,12 +768,11 @@
         "steps": [
           {
             "result": {
-              "duration": 2003821,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(validarCurriculoSteps.java:70)\r\n\tat ✽.Dado que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Brasil\"(validarCurriculo.feature:26)\r\n",
-              "status": "pending"
+              "duration": 1948426224,
+              "status": "passed"
             },
             "line": 26,
-            "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Brasil\"",
+            "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Bahamas\"",
             "match": {
               "arguments": [
                 {
@@ -781,7 +780,7 @@
                   "offset": 53
                 },
                 {
-                  "val": "Brasil",
+                  "val": "Bahamas",
                   "offset": 74
                 }
               ],
@@ -791,7 +790,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 222656063,
+              "status": "passed"
             },
             "line": 27,
             "name": "alteracao eh realizada com sucesso",
@@ -811,7 +811,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4464242899,
+              "duration": 4610714462,
               "status": "passed"
             },
             "line": 9,
@@ -833,7 +833,7 @@
           },
           {
             "result": {
-              "duration": 11284953137,
+              "duration": 4895964755,
               "status": "passed"
             },
             "line": 10,
@@ -849,7 +849,7 @@
         "before": [
           {
             "result": {
-              "duration": 7405303653,
+              "duration": 7424180054,
               "status": "passed"
             },
             "match": {
@@ -860,11 +860,11 @@
         "line": 29,
         "name": "validacao de CPF",
         "description": "",
-        "id": "validar-currico;validacao-de-cpf",
+        "id": "validar-curriculo;validacao-de-cpf",
         "after": [
           {
             "result": {
-              "duration": 253923538,
+              "duration": 2326039226,
               "status": "passed"
             },
             "match": {
@@ -877,16 +877,15 @@
         "steps": [
           {
             "result": {
-              "duration": 293003,
-              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(validarCurriculoSteps.java:76)\r\n\tat ✽.Dado que alterei o CPF de forma correta \"123.123.123-23\"(validarCurriculo.feature:30)\r\n",
-              "status": "pending"
+              "duration": 2506575761,
+              "status": "passed"
             },
             "line": 30,
-            "name": "que alterei o CPF de forma correta \"123.123.123-23\"",
+            "name": "que alterei o CPF de forma correta \"418.976.170-20\"",
             "match": {
               "arguments": [
                 {
-                  "val": "123.123.123-23",
+                  "val": "418.976.170-20",
                   "offset": 36
                 }
               ],
@@ -896,9 +895,16 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 137230270,
+              "status": "passed"
             },
-            "line": 31,
+            "comments": [
+              {
+                "line": 31,
+                "value": "#Obs.: apenas Brasil"
+              }
+            ],
+            "line": 32,
             "name": "alteracao eh realizada com sucesso",
             "match": {
               "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
@@ -908,9 +914,9 @@
         ]
       }
     ],
-    "name": "Validar Currico",
+    "name": "Validar Curriculo",
     "description": "\r\nComo usuário desejo validar todas as informacoes mais relevantes do meu curriculo\r\nvia Selenium WebDriver com BDD",
-    "id": "validar-currico",
+    "id": "validar-curriculo",
     "keyword": "Funcionalidade",
     "uri": "validarCurriculo.feature",
     "tags": [

@@ -2,13 +2,11 @@ package steps;
 
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
@@ -16,44 +14,42 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
-import cucumber.api.java.pt.Quando;
 
 public class validarCurriculoSteps {
-	
-	private WebDriver driver;
-	private WebDriverWait wait;
 
+	private WebDriver driver;
+	private WebDriverWait wait; 
 	
 	@Before
 	public void acessoInicial() {
 		acessarPagina();
 		wait = new WebDriverWait(driver, 5);
 	}
-	
+
 	@After
 	public void fecharPagina() {
-		driver.close();
+		driverClose();
 	}
 
 	@Dado("^que acesso minha conta com \"([^\"]*)\" e (\\d+)$")
 	public void queAcessoMinhaContaComE(String login, String senha) throws Throwable {
 		fazerLogin(login, senha);
 	}
-	
+
 	@Dado("^acesso a area da funcionalidade de atualizar curriculo$")
 	public void acessoAAreaAFuncionalidadeDeAtualizarCurriculo() throws Throwable {
-		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("msgLogado")))); 
-		driver.findElement(By.xpath("//nav[@id='menuTopo']/a/span")).click();
-	    driver.findElement(By.xpath("//a[contains(text(),'Atualizar currículo')]")).click();
+		verificaLogadao();
+		acessaAtualizarCurriculo();
 	}
-	
-	@Dado("^que edito dados pessoais (\\d+)/(\\d+)/(\\d+) \"([^\"]*)\" \"([^\"]*)\" (\\d+)$")
-	public void queEditoDadosPessoais(int dia, int mes, int ano, String genero, String estadoCivil, int filhos) throws Throwable {
-	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/dados_pessoais/edit')]")).click();	    
-	    esperaAbrirParaEdicao();
 
-	    alteraDataNascimento(dia, mes, ano);
-	    alteraEstadoCivil(estadoCivil);
+	@Dado("^que edito dados pessoais (\\d+)/(\\d+)/(\\d+) \"([^\"]*)\" \"([^\"]*)\" (\\d+)$")
+	public void queEditoDadosPessoais(int dia, int mes, int ano, String genero, String estadoCivil, int filhos)
+			throws Throwable {
+		abrirEditarDadosPessoais();
+		esperaAbrirParaEdicao();
+
+		alteraDataNascimento(dia, mes, ano);
+		alteraEstadoCivil(estadoCivil);
 		alterarGenero(genero);
 		alteraFilhos(filhos);
 	}
@@ -61,33 +57,46 @@ public class validarCurriculoSteps {
 	@Então("^alteracao eh realizada com sucesso$")
 	public void alteracaoEhRealizadaComSucesso() throws Throwable {
 		salvarEdicao();
-		verificaMensagemComSucesso();	
+		verificaMensagemComSucesso();
 	}
 
 	@Dado("^que edito documentos pessoais País de Nacionalidade \"([^\"]*)\" e Documento \"([^\"]*)\"$")
-	public void queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String arg1, String arg2) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String nascionalidade, String documentos)
+			throws Throwable {
+		abrirEditarDadosPessoais();
+		esperaAbrirParaEdicao();
+		alterarDocumentos(nascionalidade, documentos);
+		alterarTipoDocumento();
 	}
 
 	@Dado("^que alterei o CPF de forma correta \"([^\"]*)\"$")
-	public void queAltereiOCPFDeFormaCorreta(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void queAltereiOCPFDeFormaCorreta(String cpf) throws Throwable {
+		abrirEditarDadosPessoais();
+		esperaAbrirParaEdicao();
+		alterarDocumentos("Brasil", "Brasil");
+		alterarCPF(cpf);
+	}
+	
+	private void alterarTipoDocumento() {
+		String tipos = driver.findElement(By.id("dados_pessoais_documentos_attributes_0_tipo_id")).getText();
+		String[] fn = tipos.split("\n"); 
+		
+		new Select(driver.findElement(By.id("dados_pessoais_documentos_attributes_0_tipo_id"))).selectByVisibleText(fn[1]);
+	}
+	
+	private void alterarCPF(String cpf) {
+		driver.findElement(By.id("dados_pessoais_documentos_attributes_0_numero")).click();
+		driver.findElement(By.id("dados_pessoais_documentos_attributes_0_numero")).clear();
+		driver.findElement(By.id("dados_pessoais_documentos_attributes_0_numero")).sendKeys(cpf);
 	}
 
-
-
-	
-	
-	
 	private void acessarPagina() {
 		System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.vagas.com.br/");
 		
 		if (!driver.getCurrentUrl().contains("vagas.com.br")) {
-		    //throw new PendingException();
+		    throw new PendingException("não abriu o site correto");
 		}
 	}
 	
@@ -117,7 +126,6 @@ public class validarCurriculoSteps {
 	}
 
 	private void alteraEstadoCivil(String estadoCivil) {
-	    driver.findElement(By.id("dados_pessoais_estado_civil")).click();
 	    String text = "";
 	    	
 	    if (estadoCivil.equals("separado")) {
@@ -153,7 +161,6 @@ public class validarCurriculoSteps {
 	}
 	
 	private void esperaAbrirParaEdicao() {
-	   // wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("marcadorEdicao"))));
 	    wait.until(ExpectedConditions.elementToBeClickable(By.className("btn-success")));		
 	}
 	
@@ -164,5 +171,28 @@ public class validarCurriculoSteps {
 	private void verificaMensagemComSucesso() {
 		assertTrue(driver.findElement(By.className("ico-ok")).isEnabled());
 	}
-	
+
+	private void abrirEditarDadosPessoais() {
+		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/dados_pessoais/edit')]")).click();	    		
+	}
+
+	private void alterarDocumentos(String nascionalidade, String documentos) {
+	    new Select(driver.findElement(By.id("dados_pessoais_pais_de_nacionalidade"))).selectByVisibleText(nascionalidade);
+	    new Select(driver.findElement(By.id("dados_pessoais_documentos_attributes_0_pais_id"))).selectByVisibleText(documentos);    
+	}
+
+	private void verificaLogadao() {
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("msgLogado")))); 
+	}
+
+	private void acessaAtualizarCurriculo() {
+		driver.findElement(By.xpath("//nav[@id='menuTopo']/a/span")).click();
+	    driver.findElement(By.xpath("//a[contains(text(),'Atualizar currículo')]")).click();				
+	}
+
+	private void driverClose() {
+		driver.close();		
+	}
+
+
 }

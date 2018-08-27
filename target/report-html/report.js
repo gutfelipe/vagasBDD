@@ -7,9 +7,9 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "Validar Currico",
+  "name": "Validar Curriculo",
   "description": "\r\nComo usuário desejo validar todas as informacoes mais relevantes do meu curriculo\r\nvia Selenium WebDriver com BDD",
-  "id": "validar-currico",
+  "id": "validar-curriculo",
   "keyword": "Funcionalidade",
   "tags": [
     {
@@ -22,7 +22,7 @@ formatter.scenarioOutline({
   "line": 13,
   "name": "dados pessoais validacao de campos",
   "description": "",
-  "id": "validar-currico;dados-pessoais-validacao-de-campos",
+  "id": "validar-curriculo;dados-pessoais-validacao-de-campos",
   "type": "scenario_outline",
   "keyword": "Esquema do Cenário"
 });
@@ -40,7 +40,7 @@ formatter.examples({
   "line": 17,
   "name": "",
   "description": "",
-  "id": "validar-currico;dados-pessoais-validacao-de-campos;",
+  "id": "validar-curriculo;dados-pessoais-validacao-de-campos;",
   "rows": [
     {
       "cells": [
@@ -50,7 +50,7 @@ formatter.examples({
         "filhos"
       ],
       "line": 18,
-      "id": "validar-currico;dados-pessoais-validacao-de-campos;;1"
+      "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;1"
     },
     {
       "cells": [
@@ -60,7 +60,7 @@ formatter.examples({
         "2"
       ],
       "line": 19,
-      "id": "validar-currico;dados-pessoais-validacao-de-campos;;2"
+      "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;2"
     },
     {
       "cells": [
@@ -70,7 +70,7 @@ formatter.examples({
         "1"
       ],
       "line": 20,
-      "id": "validar-currico;dados-pessoais-validacao-de-campos;;3"
+      "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;3"
     },
     {
       "cells": [
@@ -80,7 +80,7 @@ formatter.examples({
         "3"
       ],
       "line": 21,
-      "id": "validar-currico;dados-pessoais-validacao-de-campos;;4"
+      "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;4"
     },
     {
       "cells": [
@@ -90,7 +90,7 @@ formatter.examples({
         "0"
       ],
       "line": 22,
-      "id": "validar-currico;dados-pessoais-validacao-de-campos;;5"
+      "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;5"
     },
     {
       "cells": [
@@ -100,13 +100,13 @@ formatter.examples({
         "0"
       ],
       "line": 23,
-      "id": "validar-currico;dados-pessoais-validacao-de-campos;;6"
+      "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;6"
     }
   ],
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 13914922337,
+  "duration": 9892594845,
   "status": "passed"
 });
 formatter.background({
@@ -140,21 +140,21 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 8340626308,
+  "duration": 4790325546,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 3945074438,
+  "duration": 4914441677,
   "status": "passed"
 });
 formatter.scenario({
   "line": 19,
   "name": "dados pessoais validacao de campos",
   "description": "",
-  "id": "validar-currico;dados-pessoais-validacao-de-campos;;2",
+  "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;2",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
@@ -210,22 +210,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 10690999491,
+  "duration": 3661034292,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 259885540,
+  "duration": 245082480,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2323731829,
+  "duration": 2312690985,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7929006106,
+  "duration": 7365050129,
   "status": "passed"
 });
 formatter.background({
@@ -259,21 +259,21 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 5493588487,
+  "duration": 4639400795,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 4193395053,
+  "duration": 4936031376,
   "status": "passed"
 });
 formatter.scenario({
   "line": 20,
   "name": "dados pessoais validacao de campos",
   "description": "",
-  "id": "validar-currico;dados-pessoais-validacao-de-campos;;3",
+  "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;3",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
@@ -329,22 +329,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 2369351531,
+  "duration": 1993579236,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 276883100,
+  "duration": 231521663,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2150880952,
+  "duration": 2321427075,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7528874556,
+  "duration": 7186588024,
   "status": "passed"
 });
 formatter.background({
@@ -378,21 +378,21 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 5559041005,
+  "duration": 4499759670,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 4016632439,
+  "duration": 5767242515,
   "status": "passed"
 });
 formatter.scenario({
   "line": 21,
   "name": "dados pessoais validacao de campos",
   "description": "",
-  "id": "validar-currico;dados-pessoais-validacao-de-campos;;4",
+  "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;4",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
@@ -448,22 +448,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 3584281156,
+  "duration": 4486262285,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 250130737,
+  "duration": 217070131,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2315201143,
+  "duration": 2071133222,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7581329228,
+  "duration": 7267535707,
   "status": "passed"
 });
 formatter.background({
@@ -497,21 +497,21 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4453956840,
+  "duration": 4267718833,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 6186922938,
+  "duration": 2968503711,
   "status": "passed"
 });
 formatter.scenario({
   "line": 22,
   "name": "dados pessoais validacao de campos",
   "description": "",
-  "id": "validar-currico;dados-pessoais-validacao-de-campos;;5",
+  "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;5",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
@@ -567,22 +567,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 2309222149,
+  "duration": 2671688115,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 258334438,
+  "duration": 214237897,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2077327059,
+  "duration": 2319677364,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7418152353,
+  "duration": 7764657219,
   "status": "passed"
 });
 formatter.background({
@@ -616,21 +616,21 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 6568213956,
+  "duration": 4938120531,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 6359682062,
+  "duration": 7455998420,
   "status": "passed"
 });
 formatter.scenario({
   "line": 23,
   "name": "dados pessoais validacao de campos",
   "description": "",
-  "id": "validar-currico;dados-pessoais-validacao-de-campos;;6",
+  "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;6",
   "type": "scenario",
   "keyword": "Esquema do Cenário",
   "tags": [
@@ -686,22 +686,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 4208913250,
+  "duration": 1663574656,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 268848556,
+  "duration": 223742363,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2448698648,
+  "duration": 2310011671,
   "status": "passed"
 });
 formatter.before({
-  "duration": 8802267298,
+  "duration": 7680556358,
   "status": "passed"
 });
 formatter.background({
@@ -735,27 +735,27 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4480099032,
+  "duration": 4382491347,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 5382693730,
+  "duration": 5042062135,
   "status": "passed"
 });
 formatter.scenario({
   "line": 25,
   "name": "validacao de documentos pessoais",
   "description": "",
-  "id": "validar-currico;validacao-de-documentos-pessoais",
+  "id": "validar-curriculo;validacao-de-documentos-pessoais",
   "type": "scenario",
   "keyword": "Cenário"
 });
 formatter.step({
   "line": 26,
-  "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Brasil\"",
+  "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Bahamas\"",
   "keyword": "Dado "
 });
 formatter.step({
@@ -770,29 +770,29 @@ formatter.match({
       "offset": 53
     },
     {
-      "val": "Brasil",
+      "val": "Bahamas",
       "offset": 74
     }
   ],
   "location": "validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String,String)"
 });
 formatter.result({
-  "duration": 2003821,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(validarCurriculoSteps.java:70)\r\n\tat ✽.Dado que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Brasil\"(validarCurriculo.feature:26)\r\n",
-  "status": "pending"
+  "duration": 1948426224,
+  "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 222656063,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 2118071059,
+  "duration": 2326109078,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7405303653,
+  "duration": 7424180054,
   "status": "passed"
 });
 formatter.background({
@@ -826,56 +826,62 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4464242899,
+  "duration": 4610714462,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 11284953137,
+  "duration": 4895964755,
   "status": "passed"
 });
 formatter.scenario({
   "line": 29,
   "name": "validacao de CPF",
   "description": "",
-  "id": "validar-currico;validacao-de-cpf",
+  "id": "validar-curriculo;validacao-de-cpf",
   "type": "scenario",
   "keyword": "Cenário"
 });
 formatter.step({
   "line": 30,
-  "name": "que alterei o CPF de forma correta \"123.123.123-23\"",
+  "name": "que alterei o CPF de forma correta \"418.976.170-20\"",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 31,
+  "comments": [
+    {
+      "line": 31,
+      "value": "#Obs.: apenas Brasil"
+    }
+  ],
+  "line": 32,
   "name": "alteracao eh realizada com sucesso",
   "keyword": "Então "
 });
 formatter.match({
   "arguments": [
     {
-      "val": "123.123.123-23",
+      "val": "418.976.170-20",
       "offset": 36
     }
   ],
   "location": "validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(String)"
 });
 formatter.result({
-  "duration": 293003,
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat steps.validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(validarCurriculoSteps.java:76)\r\n\tat ✽.Dado que alterei o CPF de forma correta \"123.123.123-23\"(validarCurriculo.feature:30)\r\n",
-  "status": "pending"
+  "duration": 2506575761,
+  "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 137230270,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 253923538,
+  "duration": 2326039226,
   "status": "passed"
 });
 });

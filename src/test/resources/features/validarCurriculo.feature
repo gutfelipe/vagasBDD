@@ -1,6 +1,6 @@
 #language: pt
 @funcionalidade
-Funcionalidade: Validar Currico
+Funcionalidade: Validar Curriculo
   
   Como usuário desejo validar todas as informacoes mais relevantes do meu curriculo
   via Selenium WebDriver com BDD
@@ -21,13 +21,14 @@ Funcionalidade: Validar Currico
 			| 03/12/1991		|"feminino" |"viuvo"				|3			|
 			| 03/12/1992		|"masculino"|"separado"			|0			|
  			| 03/12/1993		|"feminino" |"divorciado"		|0			|
-		
+
 		Cenário: validacao de documentos pessoais
-			Dado que edito documentos pessoais País de Nacionalidade "Brasil" e Documento "Brasil"
+			Dado que edito documentos pessoais País de Nacionalidade "Brasil" e Documento "Bahamas"
 			Então alteracao eh realizada com sucesso
-		
+
 		Cenário: validacao de CPF
-			Dado que alterei o CPF de forma correta "123.123.123-23"
+			Dado que alterei o CPF de forma correta "418.976.170-20"
+			#Obs.: apenas Brasil
 			Então alteracao eh realizada com sucesso
 	
 	
