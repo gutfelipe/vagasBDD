@@ -21,5 +21,6 @@ Obs.: Em alguns casos a IDE perde a acentuação do `Então` ajustar manualmente
 4 Executar arquivo `RunnerTest.java`
 
 # Evidências
-`...`/vagasBDD-master/vagasBDD-`Branch`/target/report-html/index.html
+`...`vagasBDD/target/report-html/index.html
+
  
