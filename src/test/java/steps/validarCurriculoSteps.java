@@ -111,27 +111,38 @@ public class validarCurriculoSteps {
 	@Dado("^que altero meu endereco para \"([^\"]*)\"(\\d+)\"([^\"]*)\"\"([^\"]*)\"\"([^\"]*)\"$")
 	public void queAlteroMeuEnderecoPara(String pais, int Zip, String estado, String cidade, String endereco) throws Throwable {
 		
-	    driver.findElement(By.xpath("//form[@id='edit_endereco_']/div[3]/button")).click();
-	    driver.findElement(By.id("endereco_pais_id")).click();
-	    
-	    
-	    new Select(driver.findElement(By.id("endereco_pais_id"))).selectByVisibleText("Cuba");
-	    
+	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/endereco/edit')]")).click();
+	       
+		editarEnderecoInfomaCombo("endereco_pais_id", pais);
+	
 	    driver.findElement(By.id("endereco_cep")).click();
+	    driver.findElement(By.id("endereco_cep")).clear();
+	    driver.findElement(By.id("endereco_cep")).sendKeys(String.format("%d", Zip));
 	    
-	    driver.findElement(By.id("endereco_uf_id")).click();
-	    new Select(driver.findElement(By.id("endereco_uf_id"))).selectByVisibleText("Matanzas");
-	    
-	    driver.findElement(By.id("endereco_cidade_id")).click();
-	    new Select(driver.findElement(By.id("endereco_cidade_id"))).selectByVisibleText("Australia");
-	    
-	    driver.findElement(By.id("endereco_logradouro")).click();
+		editarEnderecoInfomaCombo("endereco_uf_id", estado);
 
-	
-	
+		editarEnderecoInfomaCombo("endereco_cidade_id", cidade);
+   
+	    driver.findElement(By.id("endereco_logradouro")).click();
+	    driver.findElement(By.id("endereco_logradouro")).clear();
+	    driver.findElement(By.id("endereco_logradouro")).sendKeys(endereco);
+
 	}
 	
 	
+	private void editarEnderecoInfomaCombo(String elementID, String campo) {
+	    String todoCombo = driver.findElement(By.id(elementID)).getText();
+		String[] lista = todoCombo.split("\n"); 
+		
+		for (String elementoDoCombo : lista) {
+			if (elementoDoCombo.equals(campo)) {
+			    new Select(driver.findElement(By.id(elementID))).selectByVisibleText(campo);
+				break;
+			}
+		}
+	    throw new PendingException("campo não encontrado: " + campo);
+	}
+
 	@Dado("^que altero meu email \"([^\"]*)\"$")
 	public void queAlteroMeuEmail(String arg1) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions

@@ -39,7 +39,7 @@ Funcionalidade: Validar Curriculo
 		Cenário: alteracao de nome
 			Dado que altero meu nome para "felipetest"
 			Então alteracao eh realizada com sucesso
-
+		@vai
 		Esquema do Cenário: alteracao de endereco
 			Dado que altero meu endereco para <pais><Zip><estado><cidade><endereco>
 			Então alteracao eh realizada com sucesso
