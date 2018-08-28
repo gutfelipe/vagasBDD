@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty", "html:target/report-html", "json:target/report.json"},
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
-		dryRun = false, //true sem webdriver, só cenários
+		dryRun = true, /*true sem webdriver, só cenários*/
 		strict = false
 		)
 

@@ -17,8 +17,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4790325546,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -39,8 +38,7 @@
           },
           {
             "result": {
-              "duration": 4914441677,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "acesso a area da funcionalidade de atualizar curriculo",
@@ -52,39 +50,16 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 9892594845,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
-          }
-        ],
         "line": 19,
         "name": "dados pessoais validacao de campos",
         "description": "",
         "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 2312690985,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.fecharPagina()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 3661034292,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "que edito dados pessoais 02/03/1980 \"feminino\" \"casado\" 2",
@@ -127,8 +102,7 @@
           },
           {
             "result": {
-              "duration": 245082480,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "alteracao eh realizada com sucesso",
@@ -154,8 +128,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4639400795,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -176,8 +149,7 @@
           },
           {
             "result": {
-              "duration": 4936031376,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "acesso a area da funcionalidade de atualizar curriculo",
@@ -189,39 +161,16 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7365050129,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
-          }
-        ],
         "line": 20,
         "name": "dados pessoais validacao de campos",
         "description": "",
         "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 2321427075,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.fecharPagina()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 1993579236,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "que edito dados pessoais 03/12/1995 \"masculino\" \"solteiro\" 1",
@@ -264,8 +213,7 @@
           },
           {
             "result": {
-              "duration": 231521663,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "alteracao eh realizada com sucesso",
@@ -291,8 +239,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4499759670,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -313,8 +260,7 @@
           },
           {
             "result": {
-              "duration": 5767242515,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "acesso a area da funcionalidade de atualizar curriculo",
@@ -326,39 +272,16 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7186588024,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
-          }
-        ],
         "line": 21,
         "name": "dados pessoais validacao de campos",
         "description": "",
         "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 2071133222,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.fecharPagina()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 4486262285,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "que edito dados pessoais 03/12/1991 \"feminino\" \"viuvo\" 3",
@@ -401,8 +324,7 @@
           },
           {
             "result": {
-              "duration": 217070131,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "alteracao eh realizada com sucesso",
@@ -428,8 +350,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4267718833,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -450,8 +371,7 @@
           },
           {
             "result": {
-              "duration": 2968503711,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "acesso a area da funcionalidade de atualizar curriculo",
@@ -463,39 +383,16 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7267535707,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
-          }
-        ],
         "line": 22,
         "name": "dados pessoais validacao de campos",
         "description": "",
         "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 2319677364,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.fecharPagina()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 2671688115,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "que edito dados pessoais 03/12/1992 \"masculino\" \"separado\" 0",
@@ -538,8 +435,7 @@
           },
           {
             "result": {
-              "duration": 214237897,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "alteracao eh realizada com sucesso",
@@ -565,8 +461,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4938120531,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -587,8 +482,7 @@
           },
           {
             "result": {
-              "duration": 7455998420,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "acesso a area da funcionalidade de atualizar curriculo",
@@ -600,39 +494,16 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7764657219,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
-          }
-        ],
         "line": 23,
         "name": "dados pessoais validacao de campos",
         "description": "",
         "id": "validar-curriculo;dados-pessoais-validacao-de-campos;;6",
-        "after": [
-          {
-            "result": {
-              "duration": 2310011671,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.fecharPagina()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 1663574656,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 14,
             "name": "que edito dados pessoais 03/12/1993 \"feminino\" \"divorciado\" 0",
@@ -675,8 +546,7 @@
           },
           {
             "result": {
-              "duration": 223742363,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 15,
             "name": "alteracao eh realizada com sucesso",
@@ -702,8 +572,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4382491347,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -724,8 +593,7 @@
           },
           {
             "result": {
-              "duration": 5042062135,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "acesso a area da funcionalidade de atualizar curriculo",
@@ -737,39 +605,16 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7680556358,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
-          }
-        ],
         "line": 25,
         "name": "validacao de documentos pessoais",
         "description": "",
         "id": "validar-curriculo;validacao-de-documentos-pessoais",
-        "after": [
-          {
-            "result": {
-              "duration": 2326109078,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.fecharPagina()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 1948426224,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 26,
             "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Bahamas\"",
@@ -790,8 +635,7 @@
           },
           {
             "result": {
-              "duration": 222656063,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 27,
             "name": "alteracao eh realizada com sucesso",
@@ -811,8 +655,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4610714462,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "que acesso minha conta com \"gutembergtest\" e 123456",
@@ -833,8 +676,7 @@
           },
           {
             "result": {
-              "duration": 4895964755,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 10,
             "name": "acesso a area da funcionalidade de atualizar curriculo",
@@ -846,39 +688,16 @@
         ]
       },
       {
-        "before": [
-          {
-            "result": {
-              "duration": 7424180054,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.acessoInicial()"
-            }
-          }
-        ],
         "line": 29,
         "name": "validacao de CPF",
         "description": "",
         "id": "validar-curriculo;validacao-de-cpf",
-        "after": [
-          {
-            "result": {
-              "duration": 2326039226,
-              "status": "passed"
-            },
-            "match": {
-              "location": "validarCurriculoSteps.fecharPagina()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Cenário",
         "steps": [
           {
             "result": {
-              "duration": 2506575761,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 30,
             "name": "que alterei o CPF de forma correta \"418.976.170-20\"",
@@ -895,8 +714,7 @@
           },
           {
             "result": {
-              "duration": 137230270,
-              "status": "passed"
+              "status": "skipped"
             },
             "comments": [
               {
@@ -905,6 +723,367 @@
               }
             ],
             "line": 32,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "alteracao de foto",
+        "description": "",
+        "id": "validar-curriculo;alteracao-de-foto",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "que altero minha foto do perfil \"imagem1.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "imagem1.jpg",
+                  "offset": 33
+                }
+              ],
+              "location": "validarCurriculoSteps.queAlteroMinhaFotoDoPerfil(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "comments": [
+              {
+                "line": 36,
+                "value": "#Obs.: colocar imagem dentro do projeto pasta ...\\vagasBDD\\image\\"
+              }
+            ],
+            "line": 37,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@ignore"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 39,
+        "name": "alteracao de nome",
+        "description": "",
+        "id": "validar-curriculo;alteracao-de-nome",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "que altero meu nome para \"felipetest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "felipetest",
+                  "offset": 26
+                }
+              ],
+              "location": "validarCurriculoSteps.queAlteroMeuNomePara(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 48,
+        "name": "alteracao de endereco",
+        "description": "",
+        "id": "validar-curriculo;alteracao-de-endereco;;2",
+        "type": "scenario",
+        "keyword": "Esquema do Cenário",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "que altero meu endereco para \"Brasil\"12345678\"São Paulo\"\"Osasco\"\"rua de teste \"",
+            "match": {},
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@funcionalidade"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest",
+                  "offset": 28
+                },
+                {
+                  "val": "123456",
+                  "offset": 45
+                }
+              ],
+              "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "acesso a area da funcionalidade de atualizar curriculo",
+            "match": {
+              "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+            },
+            "keyword": "E "
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "name": "alteracao de contatos",
+        "description": "",
+        "id": "validar-curriculo;alteracao-de-contatos",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "que altero meu email \"gutembergtest2@mailinator.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "gutembergtest2@mailinator.com",
+                  "offset": 22
+                }
+              ],
+              "location": "validarCurriculoSteps.queAlteroMeuEmail(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "alteracao eh realizada com sucesso",
+            "match": {
+              "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "que altero meu telefone de contato principal \"11987654321\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11987654321",
+                  "offset": 46
+                }
+              ],
+              "location": "validarCurriculoSteps.queAlteroMeuTelefoneDeContatoPrincipal(String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
             "name": "alteracao eh realizada com sucesso",
             "match": {
               "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"

@@ -105,10 +105,6 @@ formatter.examples({
   ],
   "keyword": "Exemplos"
 });
-formatter.before({
-  "duration": 9892594845,
-  "status": "passed"
-});
 formatter.background({
   "line": 8,
   "name": "",
@@ -140,15 +136,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4790325546,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 4914441677,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 19,
@@ -210,23 +204,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 3661034292,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 245082480,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2312690985,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7365050129,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 8,
@@ -259,15 +243,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4639400795,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 4936031376,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 20,
@@ -329,23 +311,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 1993579236,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 231521663,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2321427075,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7186588024,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 8,
@@ -378,15 +350,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4499759670,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 5767242515,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 21,
@@ -448,23 +418,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 4486262285,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 217070131,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2071133222,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7267535707,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 8,
@@ -497,15 +457,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4267718833,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2968503711,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 22,
@@ -567,23 +525,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 2671688115,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 214237897,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2319677364,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7764657219,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 8,
@@ -616,15 +564,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4938120531,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 7455998420,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 23,
@@ -686,23 +632,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 1663574656,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 223742363,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2310011671,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7680556358,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 8,
@@ -735,15 +671,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4382491347,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 5042062135,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 25,
@@ -777,23 +711,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String,String)"
 });
 formatter.result({
-  "duration": 1948426224,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 222656063,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 2326109078,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7424180054,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 8,
@@ -826,15 +750,13 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4610714462,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 4895964755,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 29,
@@ -870,18 +792,406 @@ formatter.match({
   "location": "validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(String)"
 });
 formatter.result({
-  "duration": 2506575761,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 137230270,
-  "status": "passed"
+  "status": "skipped"
 });
-formatter.after({
-  "duration": 2326039226,
-  "status": "passed"
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 34,
+  "name": "alteracao de foto",
+  "description": "",
+  "id": "validar-curriculo;alteracao-de-foto",
+  "type": "scenario",
+  "keyword": "Cenário",
+  "tags": [
+    {
+      "line": 33,
+      "name": "@ignore"
+    }
+  ]
+});
+formatter.step({
+  "line": 35,
+  "name": "que altero minha foto do perfil \"imagem1.jpg\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 36,
+      "value": "#Obs.: colocar imagem dentro do projeto pasta ...\\vagasBDD\\image\\"
+    }
+  ],
+  "line": 37,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "imagem1.jpg",
+      "offset": 33
+    }
+  ],
+  "location": "validarCurriculoSteps.queAlteroMinhaFotoDoPerfil(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 39,
+  "name": "alteracao de nome",
+  "description": "",
+  "id": "validar-curriculo;alteracao-de-nome",
+  "type": "scenario",
+  "keyword": "Cenário"
+});
+formatter.step({
+  "line": 40,
+  "name": "que altero meu nome para \"felipetest\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 41,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "felipetest",
+      "offset": 26
+    }
+  ],
+  "location": "validarCurriculoSteps.queAlteroMeuNomePara(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenarioOutline({
+  "line": 43,
+  "name": "alteracao de endereco",
+  "description": "",
+  "id": "validar-curriculo;alteracao-de-endereco",
+  "type": "scenario_outline",
+  "keyword": "Esquema do Cenário"
+});
+formatter.step({
+  "line": 44,
+  "name": "que altero meu endereco para \u003cpais\u003e\u003cZip\u003e\u003cestado\u003e\u003ccidade\u003e\u003cendereco\u003e",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 45,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.examples({
+  "line": 46,
+  "name": "",
+  "description": "",
+  "id": "validar-curriculo;alteracao-de-endereco;",
+  "rows": [
+    {
+      "cells": [
+        "pais",
+        "Zip",
+        "estado",
+        "cidade",
+        "endereco"
+      ],
+      "line": 47,
+      "id": "validar-curriculo;alteracao-de-endereco;;1"
+    },
+    {
+      "cells": [
+        "\"Brasil\"",
+        "12345678",
+        "\"São Paulo\"",
+        "\"Osasco\"",
+        "\"rua de teste \""
+      ],
+      "line": 48,
+      "id": "validar-curriculo;alteracao-de-endereco;;2"
+    }
+  ],
+  "keyword": "Exemplos"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 48,
+  "name": "alteracao de endereco",
+  "description": "",
+  "id": "validar-curriculo;alteracao-de-endereco;;2",
+  "type": "scenario",
+  "keyword": "Esquema do Cenário",
+  "tags": [
+    {
+      "line": 2,
+      "name": "@funcionalidade"
+    }
+  ]
+});
+formatter.step({
+  "line": 44,
+  "name": "que altero meu endereco para \"Brasil\"12345678\"São Paulo\"\"Osasco\"\"rua de teste \"",
+  "matchedColumns": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 45,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 8,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 9,
+  "name": "que acesso minha conta com \"gutembergtest\" e 123456",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 10,
+  "name": "acesso a area da funcionalidade de atualizar curriculo",
+  "keyword": "E "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest",
+      "offset": 28
+    },
+    {
+      "val": "123456",
+      "offset": 45
+    }
+  ],
+  "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 50,
+  "name": "alteracao de contatos",
+  "description": "",
+  "id": "validar-curriculo;alteracao-de-contatos",
+  "type": "scenario",
+  "keyword": "Cenário"
+});
+formatter.step({
+  "line": 51,
+  "name": "que altero meu email \"gutembergtest2@mailinator.com\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 52,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.step({
+  "line": 54,
+  "name": "que altero meu telefone de contato principal \"11987654321\"",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 55,
+  "name": "alteracao eh realizada com sucesso",
+  "keyword": "Então "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "gutembergtest2@mailinator.com",
+      "offset": 22
+    }
+  ],
+  "location": "validarCurriculoSteps.queAlteroMeuEmail(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "11987654321",
+      "offset": 46
+    }
+  ],
+  "location": "validarCurriculoSteps.queAlteroMeuTelefoneDeContatoPrincipal(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });
