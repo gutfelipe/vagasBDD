@@ -112,7 +112,8 @@ public class validarCurriculoSteps {
 	public void queAlteroMeuEnderecoPara(String pais, int Zip, String estado, String cidade, String endereco) throws Throwable {
 		
 	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/endereco/edit')]")).click();
-	       
+	    esperaAbrirParaEdicao();
+	    
 		editarEnderecoInfomaCombo("endereco_pais_id", pais);
 	
 	    driver.findElement(By.id("endereco_cep")).click();
@@ -144,19 +145,48 @@ public class validarCurriculoSteps {
 	}
 
 	@Dado("^que altero meu email \"([^\"]*)\"$")
-	public void queAlteroMeuEmail(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void queAlteroMeuEmail(String email) throws Throwable {
+	    abrirEdicaoDeInformacoesDeContato();
+	    esperaAbrirParaEdicao();
+	    
+	    driver.findElement(By.id("informacoes_de_contato_email")).click();
+	    driver.findElement(By.id("informacoes_de_contato_email")).clear();
+	    driver.findElement(By.id("informacoes_de_contato_email")).sendKeys(email);
+	    
+	    driver.findElement(By.id("informacoes_de_contato_confirmacao_de_email")).click();
+	    driver.findElement(By.id("informacoes_de_contato_confirmacao_de_email")).clear();
+	    driver.findElement(By.id("informacoes_de_contato_confirmacao_de_email")).sendKeys(email);
+	}
+
+	private void abrirEdicaoDeInformacoesDeContato() {
+		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")).click();
 	}
 
 	@Dado("^que altero meu telefone de contato principal \"([^\"]*)\"$")
-	public void queAlteroMeuTelefoneDeContatoPrincipal(String arg1) throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void queAlteroMeuTelefoneDeContatoPrincipal(String telefone) throws Throwable {
+	    
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")));
+		
+		abrirEdicaoDeInformacoesDeContato();
+	    esperaAbrirParaEdicao();
+	    
+	    driver.findElement(By.id("informacoes_de_contato_telefone_numero")).click();
+	    driver.findElement(By.id("informacoes_de_contato_telefone_numero")).clear();
+	    driver.findElement(By.id("informacoes_de_contato_telefone_numero")).sendKeys(telefone);
+	}
+	
+	@Dado("^que informo que nao tenho deficiencia$")
+	public void queInformoQueNaoTenhoDeficiencia() throws Throwable {
+	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/deficiencias/edit')]")).click();
+	    esperaAbrirParaEdicao();
+	    
+	    driver.findElement(By.id("deficiencias_possui_alguma_deficiencia_false")).click();
 	}
 	
 	private void abrirEdicaoEAlterarNome(String nome) {
 	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/nome_completo/edit')]")).click();
+	    esperaAbrirParaEdicao();
+	    
 	    driver.findElement(By.id("curriculo_nome_completo")).clear();
 	    driver.findElement(By.id("curriculo_nome_completo")).sendKeys(nome);		
 	}
