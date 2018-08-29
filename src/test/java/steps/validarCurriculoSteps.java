@@ -2,12 +2,19 @@ package steps;
 
 import static org.junit.Assert.assertTrue;
 
+import java.awt.Robot;
+
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.sun.glass.events.KeyEvent;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.After;
@@ -15,20 +22,22 @@ import cucumber.api.java.Before;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Então;
 
+
 public class validarCurriculoSteps {
 
 	private WebDriver driver;
 	private WebDriverWait wait; 
 	
+	
 	@Before
 	public void acessoInicial() {
-		acessarPagina();
+		driver = utils.criarDriver();
 		wait = new WebDriverWait(driver, 5);
 	}
-
+	
 	@After
 	public void fecharPagina() {
-		driverClose();
+		driver.close();		
 	}
 
 	@Dado("^que acesso minha conta com \"([^\"]*)\" e (\\d+)$")
@@ -77,6 +86,111 @@ public class validarCurriculoSteps {
 		alterarCPF(cpf);
 	}
 	
+	@Dado("^que altero minha foto do perfil \"([^\"]*)\"$")
+	public void queAlteroMinhaFotoDoPerfil(String foto) throws Throwable {
+		
+	    String endereco = System.getProperty("user.dir") + "\\image\\" + foto;
+
+	    driver.findElement(By.id("cv-edit-foto")).click();
+
+	    driver.findElement(By.id("adicionar-foto")).click();
+	    
+	    WebElement userName = driver.switchTo().activeElement();
+	    userName.sendKeys(endereco);
+	    userName.sendKeys(Keys.ENTER);
+	    
+	    //TODO
+	}
+	
+
+	@Dado("^que altero meu nome para \"([^\"]*)\"$")
+	public void queAlteroMeuNomePara(String nome) throws Throwable {
+		abrirEdicaoEAlterarNome(nome);
+	}
+
+	@Dado("^que altero meu endereco para \"([^\"]*)\"(\\d+)\"([^\"]*)\"\"([^\"]*)\"\"([^\"]*)\"$")
+	public void queAlteroMeuEnderecoPara(String pais, int Zip, String estado, String cidade, String endereco) throws Throwable {
+		
+	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/endereco/edit')]")).click();
+	    esperaAbrirParaEdicao();
+	    
+		editarEnderecoInfomaCombo("endereco_pais_id", pais);
+	
+	    driver.findElement(By.id("endereco_cep")).click();
+	    driver.findElement(By.id("endereco_cep")).clear();
+	    driver.findElement(By.id("endereco_cep")).sendKeys(String.format("%d", Zip));
+	    
+		editarEnderecoInfomaCombo("endereco_uf_id", estado);
+
+		editarEnderecoInfomaCombo("endereco_cidade_id", cidade);
+   
+	    driver.findElement(By.id("endereco_logradouro")).click();
+	    driver.findElement(By.id("endereco_logradouro")).clear();
+	    driver.findElement(By.id("endereco_logradouro")).sendKeys(endereco);
+
+	}
+	
+	
+	private void editarEnderecoInfomaCombo(String elementID, String campo) {
+	    String todoCombo = driver.findElement(By.id(elementID)).getText();
+		String[] lista = todoCombo.split("\n"); 
+		
+		for (String elementoDoCombo : lista) {
+			if (elementoDoCombo.equals(campo)) {
+			    new Select(driver.findElement(By.id(elementID))).selectByVisibleText(campo);
+				break;
+			}
+		}
+	    throw new PendingException("campo não encontrado: " + campo);
+	}
+
+	@Dado("^que altero meu email \"([^\"]*)\"$")
+	public void queAlteroMeuEmail(String email) throws Throwable {
+	    abrirEdicaoDeInformacoesDeContato();
+	    esperaAbrirParaEdicao();
+	    
+	    driver.findElement(By.id("informacoes_de_contato_email")).click();
+	    driver.findElement(By.id("informacoes_de_contato_email")).clear();
+	    driver.findElement(By.id("informacoes_de_contato_email")).sendKeys(email);
+	    
+	    driver.findElement(By.id("informacoes_de_contato_confirmacao_de_email")).click();
+	    driver.findElement(By.id("informacoes_de_contato_confirmacao_de_email")).clear();
+	    driver.findElement(By.id("informacoes_de_contato_confirmacao_de_email")).sendKeys(email);
+	}
+
+	private void abrirEdicaoDeInformacoesDeContato() {
+		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")).click();
+	}
+
+	@Dado("^que altero meu telefone de contato principal \"([^\"]*)\"$")
+	public void queAlteroMeuTelefoneDeContatoPrincipal(String telefone) throws Throwable {
+	    
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")));
+		
+		abrirEdicaoDeInformacoesDeContato();
+	    esperaAbrirParaEdicao();
+	    
+	    driver.findElement(By.id("informacoes_de_contato_telefone_numero")).click();
+	    driver.findElement(By.id("informacoes_de_contato_telefone_numero")).clear();
+	    driver.findElement(By.id("informacoes_de_contato_telefone_numero")).sendKeys(telefone);
+	}
+	
+	@Dado("^que informo que nao tenho deficiencia$")
+	public void queInformoQueNaoTenhoDeficiencia() throws Throwable {
+	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/deficiencias/edit')]")).click();
+	    esperaAbrirParaEdicao();
+	    
+	    driver.findElement(By.id("deficiencias_possui_alguma_deficiencia_false")).click();
+	}
+	
+	private void abrirEdicaoEAlterarNome(String nome) {
+	    driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/nome_completo/edit')]")).click();
+	    esperaAbrirParaEdicao();
+	    
+	    driver.findElement(By.id("curriculo_nome_completo")).clear();
+	    driver.findElement(By.id("curriculo_nome_completo")).sendKeys(nome);		
+	}
+	
 	private void alterarTipoDocumento() {
 		String tipos = driver.findElement(By.id("dados_pessoais_documentos_attributes_0_tipo_id")).getText();
 		String[] fn = tipos.split("\n"); 
@@ -90,16 +204,7 @@ public class validarCurriculoSteps {
 		driver.findElement(By.id("dados_pessoais_documentos_attributes_0_numero")).sendKeys(cpf);
 	}
 
-	private void acessarPagina() {
-		System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.get("https://www.vagas.com.br/");
-		
-		if (!driver.getCurrentUrl().contains("vagas.com.br")) {
-		    throw new PendingException("não abriu o site correto");
-		}
-	}
-	
+
 	private void fazerLogin(String login, String senha) {
 		driver.findElement(By.id("btLogin")).click();
 		
@@ -188,10 +293,6 @@ public class validarCurriculoSteps {
 	private void acessaAtualizarCurriculo() {
 		driver.findElement(By.xpath("//nav[@id='menuTopo']/a/span")).click();
 	    driver.findElement(By.xpath("//a[contains(text(),'Atualizar currículo')]")).click();				
-	}
-
-	private void driverClose() {
-		driver.close();		
 	}
 
 

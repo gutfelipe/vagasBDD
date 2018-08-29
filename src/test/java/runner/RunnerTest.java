@@ -10,11 +10,11 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/features/",
 		glue = "",
-		tags = {"@funcionalidade"},
+		tags = {"~@ignore"},
 		plugin = {"pretty", "html:target/report-html", "json:target/report.json"},
 		monochrome = true,
 		snippets = SnippetType.CAMELCASE,
-		dryRun = false, //true sem webdriver, só cenários
+		dryRun = false, /*true sem webdriver, só cenários*/
 		strict = false
 		)
 
