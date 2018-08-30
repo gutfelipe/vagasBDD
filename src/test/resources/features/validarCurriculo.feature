@@ -23,7 +23,7 @@ Funcionalidade: Validar Curriculo
  			| 03/12/1993		|"feminino" |"divorciado"		|0			|
 
 		Cenário: validacao de documentos pessoais
-			Dado que edito documentos pessoais País de Nacionalidade "Brasil" e Documento "Bahamas"
+			Dado que edito documentos pessoais Pais de Nacionalidade "Brasil" e Documento "Bahamas"
 			Então alteracao eh realizada com sucesso
 
  		Cenário: validacao de CPF

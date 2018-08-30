@@ -106,7 +106,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 9876509521,
+  "duration": 9512436571,
   "status": "passed"
 });
 formatter.background({
@@ -140,14 +140,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 5064985828,
+  "duration": 4844581280,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 3479857757,
+  "duration": 4966406627,
   "status": "passed"
 });
 formatter.scenario({
@@ -210,22 +210,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 2251586690,
+  "duration": 2531455699,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 273342902,
+  "duration": 257949305,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2654403216,
+  "duration": 2323637811,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7597285797,
+  "duration": 6767115648,
   "status": "passed"
 });
 formatter.background({
@@ -259,14 +259,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4927846931,
+  "duration": 4484111962,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 5848594210,
+  "duration": 2392731719,
   "status": "passed"
 });
 formatter.scenario({
@@ -329,22 +329,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 2222494458,
+  "duration": 2798979323,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 266904015,
+  "duration": 246778952,
   "status": "passed"
 });
 formatter.after({
-  "duration": 326763048,
+  "duration": 2311762136,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7034592074,
+  "duration": 6857687491,
   "status": "passed"
 });
 formatter.background({
@@ -378,14 +378,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4855325722,
+  "duration": 4128538358,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2584042902,
+  "duration": 2616903769,
   "status": "passed"
 });
 formatter.scenario({
@@ -448,22 +448,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 3525092705,
+  "duration": 2564242560,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 374395634,
+  "duration": 263296984,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2455279507,
+  "duration": 2313482394,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7264549419,
+  "duration": 6997378456,
   "status": "passed"
 });
 formatter.background({
@@ -497,14 +497,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4634017246,
+  "duration": 4209380696,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2466304491,
+  "duration": 4511747108,
   "status": "passed"
 });
 formatter.scenario({
@@ -567,22 +567,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 2800413376,
+  "duration": 2358428493,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 281452962,
+  "duration": 231003999,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2659385019,
+  "duration": 2317866109,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7085380482,
+  "duration": 7162534233,
   "status": "passed"
 });
 formatter.background({
@@ -616,14 +616,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4968136703,
+  "duration": 4529055417,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2702479461,
+  "duration": 2515672440,
   "status": "passed"
 });
 formatter.scenario({
@@ -686,22 +686,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queEditoDadosPessoais(int,int,int,String,String,int)"
 });
 formatter.result({
-  "duration": 3605939952,
+  "duration": 2511231333,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 338089343,
+  "duration": 236963359,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2519193759,
+  "duration": 2322392549,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6695357152,
+  "duration": 7195534803,
   "status": "passed"
 });
 formatter.background({
@@ -735,14 +735,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4209194548,
+  "duration": 4261966766,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 3762543521,
+  "duration": 2354956259,
   "status": "passed"
 });
 formatter.scenario({
@@ -755,7 +755,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 26,
-  "name": "que edito documentos pessoais País de Nacionalidade \"Brasil\" e Documento \"Bahamas\"",
+  "name": "que edito documentos pessoais Pais de Nacionalidade \"Brasil\" e Documento \"Bahamas\"",
   "keyword": "Dado "
 });
 formatter.step({
@@ -774,25 +774,25 @@ formatter.match({
       "offset": 74
     }
   ],
-  "location": "validarCurriculoSteps.queEditoDocumentosPessoaisPaísDeNacionalidadeEDocumento(String,String)"
+  "location": "validarCurriculoSteps.queEditoDocumentosPessoaisPaisDeNacionalidadeEDocumento(String,String)"
 });
 formatter.result({
-  "duration": 2284205526,
+  "duration": 1339149212,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 325815697,
+  "duration": 232403314,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2615178601,
+  "duration": 2322332514,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7215173542,
+  "duration": 7244744924,
   "status": "passed"
 });
 formatter.background({
@@ -826,14 +826,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4355504885,
+  "duration": 4238083641,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2667182820,
+  "duration": 4184106940,
   "status": "passed"
 });
 formatter.scenario({
@@ -870,22 +870,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queAltereiOCPFDeFormaCorreta(String)"
 });
 formatter.result({
-  "duration": 2999077192,
+  "duration": 2112389600,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 196590897,
+  "duration": 164978691,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2460856753,
+  "duration": 2312353428,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6652179265,
+  "duration": 7442436092,
   "status": "passed"
 });
 formatter.background({
@@ -919,14 +919,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4564683197,
+  "duration": 5021378254,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2420128611,
+  "duration": 3110599111,
   "status": "passed"
 });
 formatter.scenario({
@@ -957,18 +957,18 @@ formatter.match({
   "location": "validarCurriculoSteps.queAlteroMeuNomePara(String)"
 });
 formatter.result({
-  "duration": 4514702057,
+  "duration": 2005165685,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 183206787,
+  "duration": 140972474,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2317413390,
+  "duration": 2329610763,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -1021,7 +1021,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 7125881699,
+  "duration": 7467297151,
   "status": "passed"
 });
 formatter.background({
@@ -1055,14 +1055,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4483833684,
+  "duration": 6256011938,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2415125664,
+  "duration": 5929780524,
   "status": "passed"
 });
 formatter.scenario({
@@ -1122,8 +1122,8 @@ formatter.match({
   "location": "validarCurriculoSteps.queAlteroMeuEnderecoPara(String,int,String,String,String)"
 });
 formatter.result({
-  "duration": 2225459223,
-  "error_message": "cucumber.api.PendingException: campo não encontrado: Brasil\r\n\tat steps.validarCurriculoSteps.editarEnderecoInfomaCombo(validarCurriculoSteps.java:144)\r\n\tat steps.validarCurriculoSteps.queAlteroMeuEnderecoPara(validarCurriculoSteps.java:117)\r\n\tat ✽.Dado que altero meu endereco para \"Brasil\"12345678\"São Paulo\"\"Osasco\"\"rua de teste \"(validarCurriculo.feature:44)\r\n",
+  "duration": 1907961256,
+  "error_message": "cucumber.api.PendingException: campo não encontrado: Brasil\r\n\tat steps.validarCurriculoSteps.editarEnderecoInfomaCombo(validarCurriculoSteps.java:131)\r\n\tat steps.validarCurriculoSteps.queAlteroMeuEnderecoPara(validarCurriculoSteps.java:110)\r\n\tat ✽.Dado que altero meu endereco para \"Brasil\"12345678\"São Paulo\"\"Osasco\"\"rua de teste \"(validarCurriculo.feature:44)\r\n",
   "status": "pending"
 });
 formatter.match({
@@ -1133,11 +1133,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 2594742413,
+  "duration": 2331837735,
   "status": "passed"
 });
 formatter.before({
-  "duration": 6341098285,
+  "duration": 7082490479,
   "status": "passed"
 });
 formatter.background({
@@ -1171,14 +1171,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4941690935,
+  "duration": 4232825449,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 2301256703,
+  "duration": 2463492646,
   "status": "passed"
 });
 formatter.scenario({
@@ -1219,14 +1219,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAlteroMeuEmail(String)"
 });
 formatter.result({
-  "duration": 3329069690,
+  "duration": 3478348944,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 247566963,
+  "duration": 223661183,
   "status": "passed"
 });
 formatter.match({
@@ -1239,22 +1239,22 @@ formatter.match({
   "location": "validarCurriculoSteps.queAlteroMeuTelefoneDeContatoPrincipal(String)"
 });
 formatter.result({
-  "duration": 1314471657,
+  "duration": 1134245493,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 146555387,
+  "duration": 130962805,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2531867640,
+  "duration": 2097862930,
   "status": "passed"
 });
 formatter.before({
-  "duration": 7556253325,
+  "duration": 7243919154,
   "status": "passed"
 });
 formatter.background({
@@ -1288,14 +1288,14 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 4445197340,
+  "duration": 5153389223,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 3853736107,
+  "duration": 2663608261,
   "status": "passed"
 });
 formatter.scenario({
@@ -1320,18 +1320,18 @@ formatter.match({
   "location": "validarCurriculoSteps.queInformoQueNaoTenhoDeficiencia()"
 });
 formatter.result({
-  "duration": 1063926335,
+  "duration": 1865185870,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
 });
 formatter.result({
-  "duration": 279464998,
+  "duration": 292235917,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2412257183,
+  "duration": 2288118775,
   "status": "passed"
 });
 });
