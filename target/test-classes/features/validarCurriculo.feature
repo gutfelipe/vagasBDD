@@ -25,11 +25,16 @@ Funcionalidade: Validar Curriculo
 		Cenário: validacao de documentos pessoais
 			Dado que edito documentos pessoais Pais de Nacionalidade "Brasil" e Documento "Bahamas"
 			Então alteracao eh realizada com sucesso
-
+		
  		Cenário: validacao de CPF
 			Dado que alterei o CPF de forma correta "418.976.170-20"
 			#Obs.: apenas Brasil
 			Então alteracao eh realizada com sucesso
+		
+		Cenário: CPF incorreto 
+			Dado que informo um CPF incorreto "999.343.344-00"
+			Então eh exibido a seguinte mensagem de erro "Insira um CPF válido."
+			
  		@ignore	
 		Cenário: alteracao de foto
 			Dado que altero minha foto do perfil "imagem1.jpg"
@@ -40,19 +45,26 @@ Funcionalidade: Validar Curriculo
 			Dado que altero meu nome para "felipetest"
 			Então alteracao eh realizada com sucesso
 		
+		Cenário: nome em branco			
+			Dado que informo o nome em branco ""
+			Então eh exibido a seguinte mensagem de erro "Insira seu nome completo."
+		
 		Esquema do Cenário: alteracao de endereco
 			Dado que altero meu endereco para <pais><Zip><estado><cidade><endereco>
 			Então alteracao eh realizada com sucesso
 			Exemplos:
 			|pais					|Zip			|estado						|cidade				|endereco					|
 			|"Brasil"			|12345678	|"São Paulo"			|"Osasco"			|"rua de teste "	|
-
+		
 		Cenário: alteracao de contatos
 			Dado que altero meu email "gutembergtest2@mailinator.com"
 			Então alteracao eh realizada com sucesso
 			
 			Dado que altero meu telefone de contato principal "11987654321"
 			Então alteracao eh realizada com sucesso
+					
+			Dado que informo um email invalido "gutemberg@@@s.com.br"
+			Então eh exibido a seguinte mensagem de erro "Insira um e-mail válido."
 			
 		Cenário: alteracao de deficiencias
 			Dado que informo que nao tenho deficiencia

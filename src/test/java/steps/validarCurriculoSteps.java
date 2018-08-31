@@ -1,11 +1,17 @@
 package steps;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.util.concurrent.TimeUnit;
+
+import org.junit.internal.runners.statements.ExpectException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -24,7 +30,7 @@ public class validarCurriculoSteps {
 	@Before
 	public void acessoInicial() {
 		driver = utils.criarDriver();
-		wait = new WebDriverWait(driver, 5);
+		wait = new WebDriverWait(driver, 10);
 	}
 
 	@After
@@ -48,17 +54,10 @@ public class validarCurriculoSteps {
 			throws Throwable {
 		abrirEditarDadosPessoais();
 		esperaAbrirParaEdicao();
-
 		alteraDataNascimento(dia, mes, ano);
 		alteraEstadoCivil(estadoCivil);
 		alterarGenero(genero);
 		alteraFilhos(filhos);
-	}
-
-	@Então("^alteracao eh realizada com sucesso$")
-	public void alteracaoEhRealizadaComSucesso() throws Throwable {
-		salvarEdicao();
-		verificaMensagemComSucesso();
 	}
 
 	@Dado("^que edito documentos pessoais Pais de Nacionalidade \"([^\"]*)\" e Documento \"([^\"]*)\"$")
@@ -75,24 +74,32 @@ public class validarCurriculoSteps {
 		abrirEditarDadosPessoais();
 		esperaAbrirParaEdicao();
 		alterarDocumentos("Brasil", "Brasil");
+		alterarTipoDocumento();
+		preencherPorID("dados_pessoais_documentos_attributes_0_numero", cpf);
+	}
+
+	@Dado("^que informo um CPF incorreto \"([^\"]*)\"$")
+	public void queInformoUmCPFIncorreto(String cpf) throws Throwable {
+		esperarTelaDisponivelParaIterecao();
+		abrirEditarDadosPessoais();
+		esperaAbrirParaEdicao();
+		alterarDocumentos("Brasil", "Brasil");
+		alterarTipoDocumento();
 		preencherPorID("dados_pessoais_documentos_attributes_0_numero", cpf);
 	}
 
 	@Dado("^que altero minha foto do perfil \"([^\"]*)\"$")
 	public void queAlteroMinhaFotoDoPerfil(String foto) throws Throwable {
-
 		String endereco = System.getProperty("user.dir") + "\\image\\" + foto;
 
 		driver.findElement(By.id("cv-edit-foto")).click();
-
 		driver.findElement(By.id("adicionar-foto")).click();
-
 		WebElement userName = driver.switchTo().activeElement();
 		userName.sendKeys(endereco);
 		userName.sendKeys(Keys.ENTER);
 
 		// TODO
-		// implementação n funciona
+		// implementação n funciona :/
 	}
 
 	@Dado("^que altero meu nome para \"([^\"]*)\"$")
@@ -100,22 +107,90 @@ public class validarCurriculoSteps {
 		abrirEdicaoEAlterarNome(nome);
 	}
 
+	@Dado("^que informo o nome em branco \"([^\"]*)\"$")
+	public void queInformoONomeEmBranco(String nome) throws Throwable {
+		esperarTelaDisponivelParaIterecao();
+		abrirEdicaoEAlterarNome(nome);
+	}
+
 	@Dado("^que altero meu endereco para \"([^\"]*)\"(\\d+)\"([^\"]*)\"\"([^\"]*)\"\"([^\"]*)\"$")
 	public void queAlteroMeuEnderecoPara(String pais, int Zip, String estado, String cidade, String endereco)
 			throws Throwable {
-
 		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/endereco/edit')]")).click();
 		esperaAbrirParaEdicao();
-
 		editarEnderecoInfomaCombo("endereco_pais_id", pais);
-
 		preencherPorID("endereco_cep", String.format("%d", Zip));
-
 		editarEnderecoInfomaCombo("endereco_uf_id", estado);
-
 		editarEnderecoInfomaCombo("endereco_cidade_id", cidade);
-
 		preencherPorID("endereco_logradouro", endereco);
+	}
+
+	@Dado("^que altero meu email \"([^\"]*)\"$")
+	public void queAlteroMeuEmail(String email) throws Throwable {
+		abrirEdicaoDeInformacoesDeContato();
+		esperaAbrirParaEdicao();
+		preencherPorID("informacoes_de_contato_email", email);
+		preencherPorID("informacoes_de_contato_confirmacao_de_email", email);
+	}
+
+	@Dado("^que informo um email invalido \"([^\"]*)\"$")
+	public void queInformoUmEmailInvalido(String email) throws Throwable {
+		esperarTelaDisponivelParaIterecao();
+		abrirEdicaoDeInformacoesDeContato();
+		esperaAbrirParaEdicao();
+		preencherPorID("informacoes_de_contato_email", email);
+	}
+
+	private void abrirEdicaoDeInformacoesDeContato() {
+		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")).click();
+	}
+
+	@Dado("^que altero meu telefone de contato principal \"([^\"]*)\"$")
+	public void queAlteroMeuTelefoneDeContatoPrincipal(String telefone) throws Throwable {
+		esperarTelaDisponivelParaIterecao();
+		abrirEdicaoDeInformacoesDeContato();
+		esperaAbrirParaEdicao();
+		preencherPorID("informacoes_de_contato_telefone_numero", telefone);
+	}
+
+	@Dado("^que informo que nao tenho deficiencia$")
+	public void queInformoQueNaoTenhoDeficiencia() throws Throwable {
+		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/deficiencias/edit')]")).click();
+		esperaAbrirParaEdicao();
+		driver.findElement(By.id("deficiencias_possui_alguma_deficiencia_false")).click();
+	}
+
+	@Então("^alteracao eh realizada com sucesso$")
+	public void alteracaoEhRealizadaComSucesso() throws Throwable {
+		salvarEdicao();
+		verificaMensagemComSucesso();
+	}
+
+	@Então("^eh exibido a seguinte mensagem de erro \"([^\"]*)\"$")
+	public void ehExibidoASeguinteMensagemDeErro(String mensagem) throws Throwable {
+		salvarEdicao();
+		wait.until(ExpectedConditions.elementToBeClickable(By.className("btn-success")));
+
+		if (mensagem.equals("Insira um e-mail válido.")) {
+			verificaMessagemDeErro("span.help-block", mensagem);
+		} else if (mensagem.equals("Insira seu nome completo.")) {
+			verificaMessagemDeErro("p.validate-error", mensagem);
+		} else if (mensagem.equals("Insira um CPF válido.")) {
+			verificaMessagemDeErro("div.controls > p.validate-error", mensagem);
+		} else {
+			throw new PendingException("Erro na validação da mensagem de erro");
+		}
+	}
+
+	private void verificaMessagemDeErro(String elementeCssSelector, String mensagen) {
+		String span = driver.findElement(By.cssSelector(elementeCssSelector)).getAttribute("innerText");
+		assertEquals(mensagen, span);
+	}
+
+	private void abrirEdicaoEAlterarNome(String nome) {
+		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/nome_completo/edit')]")).click();
+		esperaAbrirParaEdicao();
+		preencherPorID("curriculo_nome_completo", nome);
 	}
 
 	private void editarEnderecoInfomaCombo(String elementID, String campo) {
@@ -131,47 +206,6 @@ public class validarCurriculoSteps {
 		throw new PendingException("campo não encontrado: " + campo);
 	}
 
-	@Dado("^que altero meu email \"([^\"]*)\"$")
-	public void queAlteroMeuEmail(String email) throws Throwable {
-		abrirEdicaoDeInformacoesDeContato();
-		esperaAbrirParaEdicao();
-
-		preencherPorID("informacoes_de_contato_email", email);
-
-		preencherPorID("informacoes_de_contato_confirmacao_de_email", email);
-	}
-
-	private void abrirEdicaoDeInformacoesDeContato() {
-		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")).click();
-	}
-
-	@Dado("^que altero meu telefone de contato principal \"([^\"]*)\"$")
-	public void queAlteroMeuTelefoneDeContatoPrincipal(String telefone) throws Throwable {
-
-		wait.until(ExpectedConditions.elementToBeClickable(
-				By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")));
-
-		abrirEdicaoDeInformacoesDeContato();
-		esperaAbrirParaEdicao();
-
-		preencherPorID("informacoes_de_contato_telefone_numero", telefone);
-	}
-
-	@Dado("^que informo que nao tenho deficiencia$")
-	public void queInformoQueNaoTenhoDeficiencia() throws Throwable {
-		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/deficiencias/edit')]")).click();
-		esperaAbrirParaEdicao();
-
-		driver.findElement(By.id("deficiencias_possui_alguma_deficiencia_false")).click();
-	}
-
-	private void abrirEdicaoEAlterarNome(String nome) {
-		driver.findElement(By.xpath("//a[contains(@href, '/servicos/curriculo/nome_completo/edit')]")).click();
-		esperaAbrirParaEdicao();
-
-		preencherPorID("curriculo_nome_completo", nome);
-	}
-
 	private void alterarTipoDocumento() {
 		String tipos = driver.findElement(By.id("dados_pessoais_documentos_attributes_0_tipo_id")).getText();
 		String[] fn = tipos.split("\n");
@@ -182,16 +216,13 @@ public class validarCurriculoSteps {
 
 	private void fazerLogin(String login, String senha) {
 		driver.findElement(By.id("btLogin")).click();
-
 		preencherPorID("login_candidatos_form_usuario", login);
 		preencherPorID("login_candidatos_form_senha", senha);
-
 		driver.findElement(By.name("commit")).click();
 	}
 
 	private void alteraDataNascimento(int dia, int mes, int ano) {
 		String data = String.format("%02d/%02d/%d", dia, mes, ano);
-
 		preencherPorID("dados_pessoais_data_de_nascimento", data);
 	}
 
@@ -269,4 +300,8 @@ public class validarCurriculoSteps {
 		driver.findElement(By.xpath("//a[contains(text(),'Atualizar currículo')]")).click();
 	}
 
+	private void esperarTelaDisponivelParaIterecao() {
+		wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")));
+	}
 }
