@@ -21,7 +21,7 @@ Funcionalidade: Validar Curriculo
 			| 03/12/1991		|"feminino" |"viuvo"				|3			|
 			| 03/12/1992		|"masculino"|"separado"			|0			|
  			| 03/12/1993		|"feminino" |"divorciado"		|0			|
-
+    @aqui
 		Cenário: validacao de documentos pessoais
 			Dado que edito documentos pessoais Pais de Nacionalidade "Brasil" e Documento "Bahamas"
 			Então alteracao eh realizada com sucesso
@@ -35,9 +35,9 @@ Funcionalidade: Validar Curriculo
 			Dado que informo um CPF incorreto "999.343.344-00"
 			Então eh exibido a seguinte mensagem de erro "Insira um CPF válido."
 			
- 		@ignore	
+ 		@foto	
 		Cenário: alteracao de foto
-			Dado que altero minha foto do perfil "imagem1.jpg"
+			Dado que altero minha foto do perfil "imagem2.jpg"
 			#Obs.: colocar imagem dentro do projeto pasta ...\vagasBDD\image\
 			Então alteracao eh realizada com sucesso
 

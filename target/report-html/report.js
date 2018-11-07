@@ -18,63 +18,8 @@ formatter.feature({
     }
   ]
 });
-formatter.scenarioOutline({
-  "line": 52,
-  "name": "alteracao de endereco",
-  "description": "",
-  "id": "validar-curriculo;alteracao-de-endereco",
-  "type": "scenario_outline",
-  "keyword": "Esquema do Cenário",
-  "tags": [
-    {
-      "line": 51,
-      "name": "@vai"
-    }
-  ]
-});
-formatter.step({
-  "line": 53,
-  "name": "que altero meu endereco para \u003cpais\u003e\u003cZip\u003e\u003cestado\u003e\u003ccidade\u003e\u003cendereco\u003e",
-  "keyword": "Dado "
-});
-formatter.step({
-  "line": 54,
-  "name": "alteracao eh realizada com sucesso",
-  "keyword": "Então "
-});
-formatter.examples({
-  "line": 55,
-  "name": "",
-  "description": "",
-  "id": "validar-curriculo;alteracao-de-endereco;",
-  "rows": [
-    {
-      "cells": [
-        "pais",
-        "Zip",
-        "estado",
-        "cidade",
-        "endereco"
-      ],
-      "line": 56,
-      "id": "validar-curriculo;alteracao-de-endereco;;1"
-    },
-    {
-      "cells": [
-        "\"Brasil\"",
-        "12345678",
-        "\"São Paulo\"",
-        "\"Osasco\"",
-        "\"rua de teste \""
-      ],
-      "line": 57,
-      "id": "validar-curriculo;alteracao-de-endereco;;2"
-    }
-  ],
-  "keyword": "Exemplos"
-});
 formatter.before({
-  "duration": 10120950870,
+  "duration": 11088724900,
   "status": "passed"
 });
 formatter.background({
@@ -108,48 +53,37 @@ formatter.match({
   "location": "validarCurriculoSteps.queAcessoMinhaContaComE(String,String)"
 });
 formatter.result({
-  "duration": 5288562433,
+  "duration": 6150032600,
   "status": "passed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.acessoAAreaAFuncionalidadeDeAtualizarCurriculo()"
 });
 formatter.result({
-  "duration": 3043338358,
+  "duration": 5550111700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 57,
-  "name": "alteracao de endereco",
+  "line": 25,
+  "name": "validacao de documentos pessoais",
   "description": "",
-  "id": "validar-curriculo;alteracao-de-endereco;;2",
+  "id": "validar-curriculo;validacao-de-documentos-pessoais",
   "type": "scenario",
-  "keyword": "Esquema do Cenário",
+  "keyword": "Cenário",
   "tags": [
     {
-      "line": 51,
-      "name": "@vai"
-    },
-    {
-      "line": 2,
-      "name": "@funcionalidade"
+      "line": 24,
+      "name": "@aqui"
     }
   ]
 });
 formatter.step({
-  "line": 53,
-  "name": "que altero meu endereco para \"Brasil\"12345678\"São Paulo\"\"Osasco\"\"rua de teste \"",
-  "matchedColumns": [
-    0,
-    1,
-    2,
-    3,
-    4
-  ],
+  "line": 26,
+  "name": "que edito documentos pessoais Pais de Nacionalidade \"Brasil\" e Documento \"Bahamas\"",
   "keyword": "Dado "
 });
 formatter.step({
-  "line": 54,
+  "line": 27,
   "name": "alteracao eh realizada com sucesso",
   "keyword": "Então "
 });
@@ -157,31 +91,19 @@ formatter.match({
   "arguments": [
     {
       "val": "Brasil",
-      "offset": 30
+      "offset": 53
     },
     {
-      "val": "12345678",
-      "offset": 37
-    },
-    {
-      "val": "São Paulo",
-      "offset": 46
-    },
-    {
-      "val": "Osasco",
-      "offset": 57
-    },
-    {
-      "val": "rua de teste ",
-      "offset": 65
+      "val": "Bahamas",
+      "offset": 74
     }
   ],
-  "location": "validarCurriculoSteps.queAlteroMeuEnderecoPara(String,int,String,String,String)"
+  "location": "validarCurriculoSteps.queEditoDocumentosPessoaisPaisDeNacionalidadeEDocumento(String,String)"
 });
 formatter.result({
-  "duration": 1337290759,
-  "error_message": "cucumber.api.PendingException: campo não encontrado: Brasil\r\n\tat steps.validarCurriculoSteps.editarEnderecoInfomaCombo(validarCurriculoSteps.java:206)\r\n\tat steps.validarCurriculoSteps.queAlteroMeuEnderecoPara(validarCurriculoSteps.java:121)\r\n\tat ✽.Dado que altero meu endereco para \"Brasil\"12345678\"São Paulo\"\"Osasco\"\"rua de teste \"(validarCurriculo.feature:53)\r\n",
-  "status": "pending"
+  "duration": 164918400,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(@href, \u0027/servicos/curriculo/dados_pessoais/edit\u0027)]\"}\n  (Session info: chrome\u003d70.0.3538.77)\n  (Driver info: chromedriver\u003d2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform\u003dWindows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027LP1308\u0027, ip: \u002710.10.6.243\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\\Users\\Inmetrics\\AppData\\...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64713}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}\nSession ID: 32ce154e54564e85ae29642908df2b31\n*** Element info: {Using\u003dxpath, value\u003d//a[contains(@href, \u0027/servicos/curriculo/dados_pessoais/edit\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat steps.DSL.abrirEditarDadosPessoais(DSL.java:125)\r\n\tat steps.validarCurriculoSteps.queEditoDocumentosPessoaisPaisDeNacionalidadeEDocumento(validarCurriculoSteps.java:58)\r\n\tat ✽.Dado que edito documentos pessoais Pais de Nacionalidade \"Brasil\" e Documento \"Bahamas\"(validarCurriculo.feature:26)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "validarCurriculoSteps.alteracaoEhRealizadaComSucesso()"
@@ -190,7 +112,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 2665822773,
+  "duration": 27001,
   "status": "passed"
 });
 });
