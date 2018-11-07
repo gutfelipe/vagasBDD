@@ -35,9 +35,9 @@ Funcionalidade: Validar Curriculo
 			Dado que informo um CPF incorreto "999.343.344-00"
 			Então eh exibido a seguinte mensagem de erro "Insira um CPF válido."
 			
- 		@ignore	
+ 		@foto	
 		Cenário: alteracao de foto
-			Dado que altero minha foto do perfil "imagem1.jpg"
+			Dado que altero minha foto do perfil "imagem2.jpg"
 			#Obs.: colocar imagem dentro do projeto pasta ...\vagasBDD\image\
 			Então alteracao eh realizada com sucesso
 
