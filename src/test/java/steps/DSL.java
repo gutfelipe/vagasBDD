@@ -54,12 +54,11 @@ public class DSL {
 				.selectByVisibleText(fn[1]);
 	}
 
-	public WebDriver fazerLogin(String login, String senha) {
+	public void fazerLogin(String login, String senha) {
 		this.driver.findElement(By.id("btLogin")).click();
 		preencherPorID("login_candidatos_form_usuario", login);
 		preencherPorID("login_candidatos_form_senha", senha);
 		this.driver.findElement(By.name("commit")).click();
-		return driver;
 	}
 
 	public void alteraDataNascimento(int dia, int mes, int ano) {
