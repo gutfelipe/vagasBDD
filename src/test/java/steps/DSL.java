@@ -3,6 +3,9 @@ package steps;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,11 +26,11 @@ public class DSL {
 	public DSL(WebDriver driver, WebDriverWait wait) {
 		this.driver = driver;
 		this.wait = wait;
-		page = new validarCurriculoPage(this.driver, this.wait);
+		page = new validarCurriculoPage();
 	}
 
 	public void verificaMessagemDeErro(String elementeCssSelector, String mensagen) {
-		String span =  .getAttribute("innerText");
+		String span = page.cSSMensagemDeErro.getAttribute("innerText");
 		assertEquals(mensagen, span);
 	}
 
@@ -148,6 +151,24 @@ public class DSL {
 	public void esperarTelaDisponivelParaIterecao() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				By.xpath("//a[contains(@href, '/servicos/curriculo/informacoes_de_contato/edit')]")));
+	}
+
+	public void alterarFoto(String foto) throws IOException {
+		
+	
+		page.elementAlterarFoto.click();
+		
+		driver.findElement(By.id("photo"));
+
+		String caminho1 = System.getProperty("user.dir") + "\\image\\" + foto;
+		String caminho2 = new File("image/" + foto).getCanonicalPath();
+		// duas formas de pegar o caminho relativo de um arquivo e transformar em absoluto
+				
+		System.out.println(caminho1); 
+		System.out.println(caminho2);
+
+		page.candidato_imagem.sendKeys(caminho1);
+		
 	}
 
 

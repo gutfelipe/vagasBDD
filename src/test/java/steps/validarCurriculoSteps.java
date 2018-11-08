@@ -1,6 +1,5 @@
 package steps;
 
-import java.io.File;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -83,17 +82,7 @@ public class validarCurriculoSteps {
 	@Dado("^que altero minha foto do perfil \"([^\"]*)\"$")
 	public void queAlteroMinhaFotoDoPerfil(String foto) throws Throwable {
 
-		driver.findElement(By.className("cv-header__photo")).click();
-
-		String caminho1 = System.getProperty("user.dir") + "\\image\\" + foto;
-		String caminho2 = new File("image/" + foto).getCanonicalPath();
-		// duas formas de pegar o caminho relativo de um arquivo e transformar em absoluto
-		
-		
-		System.out.println(caminho1); 
-		System.out.println(caminho2);
-
-		driver.findElement(By.id("candidato_imagem")).sendKeys(caminho1);
+		dsl.alterarFoto(foto);
 
 		// TODO
 		// implementação assert 
