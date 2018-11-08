@@ -10,20 +10,24 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.PendingException;
+import pageObject.validarCurriculoPage;
 
 public class DSL {
 
 	private WebDriver driver;
 	private WebDriverWait wait;
+	private validarCurriculoPage page;
 
-	
+
+	//construtor
 	public DSL(WebDriver driver, WebDriverWait wait) {
 		this.driver = driver;
-		this.wait = wait; 
+		this.wait = wait;
+		page = new validarCurriculoPage(this.driver, this.wait);
 	}
-	
+
 	public void verificaMessagemDeErro(String elementeCssSelector, String mensagen) {
-		String span = driver.findElement(By.cssSelector(elementeCssSelector)).getAttribute("innerText");
+		String span =  .getAttribute("innerText");
 		assertEquals(mensagen, span);
 	}
 
